@@ -14,7 +14,7 @@ class StudentController extends Controller
      */
     public function index()
     {
-        return view('admin.dashboard');
+        return view('admin.pages.showstudent');
     }
 
     /**
@@ -46,7 +46,7 @@ class StudentController extends Controller
      */
     public function show(Student $student)
     {
-        return redirect()->route('student.index');
+
     }
 
     /**

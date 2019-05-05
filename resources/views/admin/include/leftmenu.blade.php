@@ -15,7 +15,7 @@
 												</a>
 											</li>
 											<li class="">
-												<a href="dashboard-crm.html" class="waves-effect waves-dark">
+												<a href="{{ route('student.index') }}" class="waves-effect waves-dark">
 													<span class="pcoded-mtext">Show Student</span>
 												</a>
 											</li>
