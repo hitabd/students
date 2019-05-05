@@ -227,7 +227,7 @@
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Blood Group</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="b_goup" name="b_goup" placeholder="Repeat Password">
+                                                <input type="text" class="form-control" id="b_group" name="b_group" placeholder="Repeat Password">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
@@ -388,7 +388,7 @@
                                                 </div>
                                         </div>
                                         <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Addmitted To</label>
+                                                <label class="col-sm-2 col-form-label">Addmitted To Class</label>
                                                 <div class="col-sm-10">
                                                 <input type="text" class="form-control" name="addmitted_to_class" id="addmitted_to_class" placeholder="Addmitted To">
                                                 <span class="messages"></span>
