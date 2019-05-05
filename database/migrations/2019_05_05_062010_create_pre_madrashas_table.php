@@ -15,7 +15,17 @@ class CreatePreMadrashasTable extends Migration
     {
         Schema::create('pre_madrashas', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('exam_class_name')->nullable();
+            $table->string('institute_name')->nullable();
+            $table->string('result')->nullable();
+            $table->string('pass_year')->nullable();
+            $table->string('board')->nullable();
+            $table->string('document_no')->nullable();
+            $table->string('addmission_class')->nullable();
+            $table->unsignedBigInteger('student_id')->nullable();
             $table->timestamps();
+
+            $table->foreign('student_id')->references('id')->on('students');
         });
     }
 

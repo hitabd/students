@@ -38,76 +38,368 @@
                          <div class="col-sm-12">
 
                             <div class="card">
-                                <div class="card-header">
-                                        <h5>Basic Inputs Validation</h5>
-                                        <span>Add class of <code>.form-control</code> with <code>&lt;input&gt;</code> tag</span>
-                                </div>
-                            <div class="card-block">
+                                <div class="card-block">
                                     <form id="main" method="post" action="/" novalidate>
+
+                                        <div class="card-header">
+                                            <h5>Student Information</h5>
+                                        </div>
+                                        <div class="row">
+                                            <label class="col-sm-2 col-form-label">Radio Buttons</label>
+                                                <div class="col-sm-10">
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="residensial" id="residensial-1" > Residensial
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="residensial" id="residensial-2" > Non-Residensial
+                                                        </label>
+                                                    </div>
+                                                    <span class="messages"></span>
+                                                </div>
+                                        </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Student Name (Bengali)</label>
+                                                <label class="col-sm-2 col-form-label">Image</label>
+                                                <div class="col-sm-10">
+                                                <input type="file" class="form-control" multiple / name="image" id="image" placeholder="Roll No" >
+                                                <span class="messages"></span>
+                                                </div>
+                                        </div>
+                                        <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Student Name (Bengali)</label>
+                                                <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="name_bn" id="name_bn" placeholder="Student Name">
+                                                <span class="messages"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Student Name (Block)</label>
+                                                <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="name_en" id="name_en" placeholder="English Block Letter">
+                                                <span class="messages"></span>
+                                                </div>
+                                            </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Father's Name (Bengali)</label>
                                             <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="name_bn" id="name_bn" placeholder="Student Name">
+                                            <input type="text" class="form-control" name="f_name_bn" id="f_name_bn" placeholder="Student Name">
                                             <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Father's Name (Block)</label>
                                             <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="name_en" id="name_en" placeholder="English Block Letter">
+                                            <input type="text" class="form-control" name="f_name_en" id="f_name_en" placeholder="English Block Letter">
                                             <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Student Name (Block)</label>
-                                            <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="name_en" id="name_en" placeholder="English Block Letter">
-                                            <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Student Name (Block)</label>
-                                            <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="name_en" id="name_en" placeholder="English Block Letter">
-                                            <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Password</label>
-                                            <div class="col-sm-10">
-                                                <input type="password" class="form-control" id="password" name="password" placeholder="Password input">
-                                                <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Repeat Password</label>
-                                            <div class="col-sm-10">
-                                                <input type="password" class="form-control" id="repeat-password" name="repeat-password" placeholder="Repeat Password">
-                                                <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Email</label>
-                                            <div class="col-sm-10">
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter valid e-mail address">
-                                            <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <label class="col-sm-2 col-form-label">Radio Buttons</label>
-                                            <div class="col-sm-10">
-                                                <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" name="gender" id="gender-1" value="option1"> Male
-                                                </label>
+                                                <label class="col-sm-2 col-form-label">Father's Occupation</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="f_occupation" name="f_occupation" placeholder="">
+                                                    <span class="messages"></span>
                                                 </div>
-                                                <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" name="gender" id="gender-2" value="option2"> Female
-                                                </label>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Father's Income</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="f_income" name="f_income" placeholder="">
+                                                    <span class="messages"></span>
                                                 </div>
+                                            </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Mother's Name (Bengali)</label>
+                                            <div class="col-sm-10">
+                                            <input type="text" class="form-control" name="m_name_bn" id="m_name_bn" placeholder="Student Name">
+                                            <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Mother's Name (Block)</label>
+                                            <div class="col-sm-10">
+                                            <input type="text" class="form-control" name="m_name_en" id="m_name_en" placeholder="English Block Letter">
+                                            <span class="messages"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Mother's Occupation</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="m_occupation" name="m_occupation" placeholder="Password input">
                                                 <span class="messages"></span>
                                             </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Mother's Income</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="m_income" name="m_income" placeholder="">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="card-header">
+                                                <h5>Present Address</h5>
+                                            </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Village</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="p_village" name="p_village" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">House No</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="p_house" name="p_house" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Post Office</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="p_post" name="p_post" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Thana</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="p_thana" name="p_thana" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">District</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="p_district" name="p_district" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="card-header">
+                                                <h5>Permanant Address</h5>
+                                            </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Village</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="per_village" name="per_village" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">House No</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="per_house" name="per_house" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Post Office</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="per_post" name="per_post" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Thana</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="per_thana" name="per_thana" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">District</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="per_district" name="per_district" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Date of Birth</label>
+                                            <div class="col-sm-10">
+                                                <input type="date" class="form-control" id="dob" name="dob" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="card-header">
+                                                <h5>Student Identification</h5>
+                                            </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Blood Group</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="b_goup" name="b_goup" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Height</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="height" name="height" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Weight</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="weight" name="weight" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Skin Color</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="skin_color" name="skin_color" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Birth Sign</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="b_sign" name="b_sign" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="card-header">
+                                                <h5>Absense of Father</h5>
+                                            </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">legal Guardian Name</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="lg_name" name="lg_name" placeholder="Repeat Password">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Village</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="lg_village" name="lg_village" placeholder="Repeat Password">
+                                                    <span class="messages"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">House No</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="lg_house" name="lg_house" placeholder="Repeat Password">
+                                                    <span class="messages"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Post Office</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="lg_post" name="lg_post" placeholder="Repeat Password">
+                                                    <span class="messages"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Thana</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="lg_thana" name="lg_thana" placeholder="Repeat Password">
+                                                    <span class="messages"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">District</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="lg_district" name="lg_district" placeholder="Repeat Password">
+                                                    <span class="messages"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Relationship With Guardian</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="relationship" name="relationship" placeholder="Repeat Password">
+                                                    <span class="messages"></span>
+                                                </div>
+                                            </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Phone</label>
+                                            <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Phone Number">
+                                            <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="card-header">
+                                                <h5>Previous Academic Record</h5>
+                                            </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Exam / Class name</label>
+                                            <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="exam_class_name" name="exam_class_name" placeholder="Enter ">
+                                            <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Institute Name</label>
+                                            <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="institute_name" name="institute_name" placeholder="Enter Institute Name">
+                                            <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Result</label>
+                                            <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="result" name="result">
+                                            <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Passing Year</label>
+                                            <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="pass_year" name="pass_year" placeholder="Enter Passing Year">
+                                            <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Board</label>
+                                            <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="board" name="board" placeholder="Enter Passing Year">
+                                            <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Document No</label>
+                                            <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="document_no" name="document_no" placeholder="Enter Document No">
+                                            <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Addmission Class</label>
+                                            <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="addmission_class" name="addmission_class" placeholder="Enter Document No">
+                                            <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="card-header">
+                                                <h5>Official Use Only</h5>
+                                        </div>
+                                        <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Addmission No</label>
+                                                <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="addission_no" id="addission_no" placeholder="Addmission No">
+                                                <span class="messages"></span>
+                                                </div>
+                                        </div>
+                                        <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Date</label>
+                                                <div class="col-sm-10">
+                                                <input type="date" class="form-control" name="date" id="date" placeholder="Date">
+                                                <span class="messages"></span>
+                                                </div>
+                                        </div>
+                                        <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Addmitted To</label>
+                                                <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="addmitted_to_class" id="addmitted_to_class" placeholder="Addmitted To">
+                                                <span class="messages"></span>
+                                                </div>
+                                        </div>
+                                        <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Roll No</label>
+                                                <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="roll_no" id="roll_no" placeholder="Roll No">
+                                                <span class="messages"></span>
+                                                </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2"></label>

@@ -15,7 +15,14 @@ class CreateOfficialsTable extends Migration
     {
         Schema::create('officials', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('addission_no');
+            $table->date('date');
+            $table->string('addmitted_to_class');
+            $table->string('roll_no');
+            $table->unsignedBigInteger('student_id')->nullable();
             $table->timestamps();
+
+            $table->foreign('student_id')->references('id')->on('students');
         });
     }
 
