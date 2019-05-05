@@ -39,8 +39,8 @@
 
                             <div class="card">
                                 <div class="card-block">
-                                    <form id="main" method="post" action="/" novalidate>
-
+                                    <form id="main" method="post" action="{{ route('student.store') }}" novalidate>
+                                        @csrf
                                         <div class="card-header">
                                             <h5>Student Information</h5>
                                         </div>

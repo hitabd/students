@@ -42,8 +42,9 @@
                                             <h5>Update StudentInformation</h5>
                                         </div>
                             <div class="card-block">
-                                    <form id="main" method="post" action="/" novalidate>
-
+                                    <form id="main" method="post" action="{{ route('student.update', $students->id) }}" novalidate>
+                                        @csrf
+                                        @method('PUT')
                                         <div class="card-header">
                                             <h5>Student Information</h5>
                                         </div>
