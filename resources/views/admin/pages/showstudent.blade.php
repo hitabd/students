@@ -107,21 +107,7 @@
             </div>
         </div>
     </div>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-
-@endsection
-=======
-=======
->>>>>>> Stashed changes
-    <div id="styleSelector">
-    </div>
 </div>
+@endsection
 
-<<<<<<< Updated upstream
-@endsection
->>>>>>> Stashed changes
-=======
-@endsection
->>>>>>> Stashed changes
+

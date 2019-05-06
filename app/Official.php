@@ -9,7 +9,7 @@ class Official extends Model
 {
     protected $table = 'officials';
 
-    protected $fillable = [];
+    protected $fillable = ['addmission_no', 'date', 'addmitted_to_class', 'roll_no', 'student_id'];
 
     public function schools(){
         return $this->belongsTo(Student::class, 'student_id');

@@ -15,7 +15,7 @@ class StudentController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.showstudent');
+        return view('admin.pages.index');
     }
 
     /**
@@ -36,6 +36,7 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
+
         $student = new Student();
 
         $student->residensial = $request->residensial;
@@ -82,8 +83,26 @@ class StudentController extends Controller
             $image->move($destinationPath, $name);
         }
         $student->image = $name;
-        //$student->save();
+        $student->save();
 
+        $office = new Official();
+        $office ->addmission_no = $request->addmission_no;
+        $office ->date = $request->date;
+        $office ->addmitted_to_class = $request->addmitted_to_class;
+        $office ->roll_no = $request->roll_no;
+        $office ->studnet_id = $student->id;
+        $office ->save();
+
+        $madrasha = new preMadrasha();
+        $madrasha ->exam_class_name = $request->exam_class_name;
+        $madrasha ->institute_name = $request->institute_name;
+        $madrasha ->result = $request->result;
+        $madrasha ->pass_year = $request->pass_year;
+        $madrasha ->board = $request->board;
+        $madrasha ->document_no = $request->document_no;
+        $madrasha ->addmission_class = $request->addmission_class;
+        $madrasha ->student_id = $student->id;
+        $madrasha ->save();
 
     }
 

@@ -15,7 +15,7 @@ class CreateOfficialsTable extends Migration
     {
         Schema::create('officials', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('addission_no');
+            $table->string('addmission_no');
             $table->date('date');
             $table->string('addmitted_to_class');
             $table->string('roll_no');
