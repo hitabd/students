@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
+use App\preMadrasha;
+use App\Official;
 use App\Student;
 
 class StudentController extends Controller
@@ -37,7 +39,7 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-
+        // dd($request);
         $student = new Student();
 
         $student->residensial = $request->residensial;
@@ -84,7 +86,10 @@ class StudentController extends Controller
             $image->move($destinationPath, $name);
             $student->image = $name;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 27109b44c7ce87ae050d1fc55d4c714f0608973f
         $student->save();
 
         $office = new Official();
@@ -92,7 +97,7 @@ class StudentController extends Controller
         $office ->date = $request->date;
         $office ->addmitted_to_class = $request->addmitted_to_class;
         $office ->roll_no = $request->roll_no;
-        $office ->studnet_id = $student->id;
+        $office ->student_id = $student->id;
         $office ->save();
 
         $madrasha = new preMadrasha();

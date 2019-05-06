@@ -37,7 +37,7 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-block">
-                                <form id="main" method="post" action="{{ route('student.store') }}" novalidate>
+                                <form id="main" method="post" action="{{ route('student.store') }}" enctype="multipart/form-data" novalidate>
                                     @csrf
                                     <div class="card-header">
                                         <h5>{{ __('Student Information') }}</h5>
@@ -47,12 +47,12 @@
                                         <div class="col-sm-10">
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" name="residensial" id="residensial-1" > Residensial
+                                                    <input class="form-check-input" type="radio" name="residensial" id="r1" value="1" > Residensial
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" name="residensial" id="residensial-2" > Non-Residensial
+                                                    <input class="form-check-input" type="radio" name="residensial" id="r2" value="0" > Non-Residensial
                                                 </label>
                                             </div>
                                             <span class="messages"></span>
@@ -375,7 +375,11 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Addmission No') }}</label>
                                         <div class="col-sm-10">
+<<<<<<< HEAD
                                             <input type="text" class="form-control" name="addmission_no" id="addission_no" placeholder=" Enter Addmission No">
+=======
+                                            <input type="text" class="form-control" name="addmission_no" id="addmission_no" placeholder="Addmission No">
+>>>>>>> 27109b44c7ce87ae050d1fc55d4c714f0608973f
                                             <span class="messages"></span>
                                         </div>
                                     </div>

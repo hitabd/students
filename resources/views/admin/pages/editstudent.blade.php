@@ -268,7 +268,7 @@
                                                 <h5>Absense of Father</h5>
                                             </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">legal Guardian Name</label>
+                                            <label class="col-sm-2 col-form-label">Legal Guardian Name</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" id="lg_name" name="lg_name" value="{{ $edits->lg_name }}">
                                                 <span class="messages"></span>
@@ -323,95 +323,7 @@
                                             <span class="messages"></span>
                                             </div>
                                         </div>
-                                        <div class="card-header">
-                                                <h5>Previous Academic Record</h5>
-                                            </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Exam / Class name</label>
-                                            <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="exam_class_name" name="exam_class_name" value="{{ $edits->exam_class_name }}">
-                                            <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Institute Name</label>
-                                            <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="institute_name" name="institute_name" value="{{ $edits->institute_name }}">
-                                            <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Result</label>
-                                            <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="result" name="result" value="{{ $edits->result }}">
-                                            <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Passing Year</label>
-                                            <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="pass_year" name="pass_year" value="{{ $edits->pass_year }}">
-                                            <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Board</label>
-                                            <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="board" name="board" value="{{ $edits->board }}">
-                                            <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Document No</label>
-                                            <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="document_no" name="document_no" value="{{ $edits->document_no }}">
-                                            <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Addmission Class</label>
-                                            <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="addmission_class" name="addmission_class" value="{{ $edits->addmission_class }}">
-                                            <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="card-header">
-                                                <h5>Official Use Only</h5>
-                                        </div>
-                                        <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Addmission No</label>
-                                                <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="addission_no" id="addission_no" value="{{ $edits->addmission_no }}">
-                                                <span class="messages"></span>
-                                                </div>
-                                        </div>
-                                        <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Date</label>
-                                                <div class="col-sm-10">
-                                                <input type="date" class="form-control" name="date" id="date" value="{{ $edits->date }}">
-                                                <span class="messages"></span>
-                                                </div>
-                                        </div>
-                                        <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Addmitted To Class</label>
-                                                <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="addmitted_to_class" id="addmitted_to_class" value="{{ $edits->addmitted_to_class }}">
-                                                <span class="messages"></span>
-                                                </div>
-                                        </div>
-                                        <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Roll No</label>
-                                                <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="roll_no" id="roll_no" value="{{ $edits->roll_no }}">
-                                                <span class="messages"></span>
-                                                </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2"></label>
-                                                <div class="col-sm-10">
-                                                <button type="submit" class="btn btn-primary m-b-0">Update</button>
-                                                </div>
-                                        </div>
+                                        
                                     </form>
                             </div>
                             </div>
