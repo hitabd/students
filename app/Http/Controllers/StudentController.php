@@ -47,7 +47,7 @@ class StudentController extends Controller
 
         $madrasha = new preMadrasha();
         $madrasha ->exam_class_name = $request->exam_class_name;
-        $madrasha ->exam_class_name = $request->exam_class_name;
+        $madrasha ->institute_name = $request->institute_name;
         $madrasha ->result = $request->result;
         $madrasha ->pass_year = $request->pass_year;
         $madrasha ->board = $request->board;
