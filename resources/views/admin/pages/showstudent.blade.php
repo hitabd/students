@@ -69,7 +69,10 @@
                                                     <td>$320,800</td>
                                                     <td>$320,800</td>
                                                     <td>$320,800</td>
-                                                    <td>$320,800</td>
+                                                    <td>
+                                                        <a href=""><button class="btn waves-effect waves-light btn-success btn-icon"><i class="ti-pencil"></i></button></a>
+                                                        <a><button class="btn waves-effect waves-light btn-danger btn-icon"><i class="ti-trash"></i></button></a>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>

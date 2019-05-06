@@ -22,7 +22,9 @@
 
 	<link rel="stylesheet" href="{{ asset('admin/assets/pages/waves/css/waves.min.css') }}" type="text/css" media="all">
 
-	<link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/icon/feather/css/feather.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/icon/feather/css/feather.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/icon/icofont/css/icofont.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/icon/themify-icons/themify-icons.css') }}">
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/css/font-awesome-n.min.css') }}">
 

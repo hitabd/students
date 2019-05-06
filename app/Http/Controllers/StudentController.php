@@ -35,7 +35,27 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+
+        $office = new Official();
+        $office ->addmission_no = $request->addmission_no;
+        $office ->date = $request->datew;
+        $office ->addmitted_to_class = $request->addmitted_to_class;
+        $office ->roll_no = $request->roll_no;
+        $office ->studnet_id = $student->id;
+        $office ->save();
+
+        $madrasha = new preMadrasha();
+        $madrasha ->exam_class_name = $request->exam_class_name;
+        $madrasha ->exam_class_name = $request->exam_class_name;
+        $madrasha ->result = $request->result;
+        $madrasha ->pass_year = $request->pass_year;
+        $madrasha ->board = $request->board;
+        $madrasha ->document_no = $request->document_no;
+        $madrasha ->addmission_class = $request->addmission_class;
+        $madrasha ->student_id = $student->id;
+        $madrasha ->save();
+
     }
 
     /**
