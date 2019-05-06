@@ -23,10 +23,12 @@ class CreateStudentsTable extends Migration
             $table->string('f_name_en');
             $table->string('f_occupation')->nullable();
             $table->string('f_income')->nullable();
+            $table->string('f_phone')->nullable();
             $table->string('m_name_bn');
             $table->string('m_name_en');
             $table->string('m_occupation')->nullable();
             $table->string('m_income')->nullable();
+            $table->string('m_phone')->nullable();
             $table->string('p_village');
             $table->string('p_house');
             $table->string('p_post');
