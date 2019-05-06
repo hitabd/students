@@ -69,7 +69,7 @@
                                                     <td>{{ $student->p_district }}</td>
                                                     <td>{{ $student->lg_name }}</td>
                                                     <td>{{ $student->phone }}</td>
-                                                    <td><img src="{{ URL::to('storage/student/images/'.$student->image) }}" alt="{{ $student->image }}" height="180" width="220"></td>
+                                                    <td><img src="{{ URL::to('storage/student/images/'.$student->image) }}" alt="{{ $student->image }}" height="100" width="100"></td>
                                                     <td style="white-space: nowrap; width: 1%;">
                                                         <div class="tabledit-toolbar btn-toolbar" style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">

@@ -37,7 +37,7 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-block">
-                                <form id="main" method="post" action="{{ route('student.store') }}" novalidate>
+                                <form id="main" method="post" action="{{ route('student.store') }}" enctype="multipart/form-data" novalidate>
                                     @csrf
                                     <div class="card-header">
                                         <h5>Student Information</h5>
@@ -47,12 +47,12 @@
                                         <div class="col-sm-10">
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" name="residensial" id="residensial-1" > Residensial
+                                                    <input class="form-check-input" type="radio" name="residensial" id="r1" value="1" > Residensial
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" name="residensial" id="residensial-2" > Non-Residensial
+                                                    <input class="form-check-input" type="radio" name="residensial" id="r2" value="0" > Non-Residensial
                                                 </label>
                                             </div>
                                             <span class="messages"></span>
@@ -375,7 +375,7 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">Addmission No</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="addission_no" id="addission_no" placeholder="Addmission No">
+                                            <input type="text" class="form-control" name="addmission_no" id="addmission_no" placeholder="Addmission No">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
