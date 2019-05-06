@@ -39,7 +39,7 @@ class StudentController extends Controller
 
         $office = new Official();
         $office ->addmission_no = $request->addmission_no;
-        $office ->date = $request->datew;
+        $office ->date = $request->date;
         $office ->addmitted_to_class = $request->addmitted_to_class;
         $office ->roll_no = $request->roll_no;
         $office ->studnet_id = $student->id;
