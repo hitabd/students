@@ -19,12 +19,20 @@
 							</li>
 							<li class="breadcrumb-item">
 								<a href="#">{{ __('Student Information') }}</a>
+								<a href=""><span class="feather icon-home"></span></a>
+							</li>
+							<li class="breadcrumb-item">
+								<a href="">{{ __('Student') }}</a>
+							</li>
+							<li class="breadcrumb-item">
+								<a href="">{{ __('Student Information') }}</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
+
 	</div>
 	<hr>
 </div>
@@ -46,16 +54,16 @@
                                             class="table table-striped table-bordered nowrap">
                                             <thead>
                                                 <tr>
-                                                    <th>Roll No</th>
-                                                    <th>Name</th>
-                                                    <th>Fathers Name</th>
-                                                    <th>Mothers Name</th>
-                                                    <th>Village</th>
-                                                    <th>District</th>
-                                                    <th>G.Name</th>
-                                                    <th>G.Phone No</th>
-                                                    <th>Image</th>
-                                                    <th>Action</th>
+                                                    <th>{{ __('Roll No') }}</th>
+                                                    <th>{{ __('Name') }}</th>
+                                                    <th>{{ __('Fathers Name') }}</th>
+                                                    <th>{{ __('Mothers Name') }}</th>
+                                                    <th>{{ __('Village') }}</th>
+                                                    <th>{{ __('District') }}</th>
+                                                    <th>{{ __('G.Name') }}</th>
+                                                    <th>{{ __('G.Phone No') }}</th>
+                                                    <th>{{ __('Image') }}</th>
+                                                    <th>{{ __('Action') }}</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -73,11 +81,11 @@
                                                     <td style="white-space: nowrap; width: 1%;">
                                                         <div class="tabledit-toolbar btn-toolbar" style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">
-                                                                <a href="{{ route('student.show', $student->id) }}" type="button" class="btn btn-primary waves-effect waves-light" 
+                                                                <a href="{{ route('student.show', $student->id) }}" type="button" class="btn btn-primary waves-effect waves-light"
                                                                     style="float: none;margin: 5px;">
                                                                     <span class="feather icon-eye"></span>
                                                                 </a>
-                                                                <a href="{{ route('student.edit', $student->id) }}" type="button" class="btn btn-primary waves-effect waves-light" 
+                                                                <a href="{{ route('student.edit', $student->id) }}" type="button" class="btn btn-primary waves-effect waves-light"
                                                                     style="float: none; margin: 5px;">
                                                                     <span class="feather icon-edit"></span>
                                                                 </a>

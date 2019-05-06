@@ -82,8 +82,9 @@ class StudentController extends Controller
             $size = $image->getClientSize();
             $destinationPath = public_path('/storage/student/images');
             $image->move($destinationPath, $name);
+            $student->image = $name;
         }
-        $student->image = $name;
+
         $student->save();
 
         $office = new Official();
