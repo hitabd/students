@@ -19,13 +19,6 @@
 							</li>
 							<li class="breadcrumb-item">
 								<a href="#">{{ __('Student Information') }}</a>
-								<a href=""><span class="feather icon-home"></span></a>
-							</li>
-							<li class="breadcrumb-item">
-								<a href="">{{ __('Student') }}</a>
-							</li>
-							<li class="breadcrumb-item">
-								<a href="">{{ __('Student Information') }}</a>
 							</li>
 						</ul>
 					</div>

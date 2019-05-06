@@ -49,13 +49,13 @@
                                 </li>
                             </ul>
                         </div>
-                    {{-- <div class="dropdown-primary dropdown">
+                    <div class="dropdown-primary dropdown">
                         <div class="dropdown-toggle" data-toggle="dropdown">
-                            <span></span>
+                            <span>{{ Auth::user()->name }}</span>
                             <i class="feather icon-chevron-down"></i>
                         </div>
                         <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                            <li>
+                            {{-- <li>
                                 <a href="#!">
                                     <i class="feather icon-settings"></i> Settings
                                 </a>
@@ -74,14 +74,14 @@
                                 <a href="auth-lock-screen.html">
                                     <i class="feather icon-lock"></i> Lock Screen
                                 </a>
-                            </li>
+                            </li> --}}
                             <li>
                                 <a href="auth-sign-in-social.html">
                                     <i class="feather icon-log-out"></i> Logout
                                 </a>
                             </li>
                         </ul>
-                    </div> --}}
+                    </div>
                 </li>
             </ul>
         </div>

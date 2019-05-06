@@ -16,6 +16,8 @@ Route::get('/', function () {
     return redirect()->route('student.index');
 });
 
+Route::get('lang/{locale}', 'LocalizationController@index');
+
 Auth::routes();
 
 Route::get('lang/{locale}', 'LocalizationController@index');

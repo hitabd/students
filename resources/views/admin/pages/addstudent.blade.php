@@ -3,31 +3,31 @@
 @section('content')
 
 <div class="page-header card">
-    <div class="row align-items-end">
-        <div class="col-lg-8">
-            <div class="page-header-title">
-                    <i class="feather icon-clipboard bg-c-blue"></i>
-                    <div class="d-inline">
-                    <h5>{{ __('Students Inputs') }}</h5>
-                    <span></span>
-                    </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="page-header-breadcrumb">
-                    <ul class=" breadcrumb breadcrumb-title">
-                    <li class="breadcrumb-item">
-                    <a href="index.html"><i class="feather icon-home"></i></a>
-                    </li>
-                    <li class="breadcrumb-item"><a href="#!">{{ __('Student') }}</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                    <a href="#!">{{ __('Student Input') }}</a>
-                    </li>
-                    </ul>
-            </div>
-        </div>
-    </div>
+	<div class="row align-items-center">
+		<div class="col-lg-8">
+			<div class="page-header-title">
+				<i class="feather icon-box bg-c-blue"></i>
+				<div class="d-inline">
+					<h5>{{ __('Student Input') }}</h5>
+					<div class="page-header-breadcrumb">
+						<ul class="breadcrumb breadcrumb-title float-left pl-0">
+							<li class="breadcrumb-item">
+								<a href="{{ route('home') }}"><span class="feather icon-home"></span></a>
+							</li>
+							<li class="breadcrumb-item">
+								<a href="{{ route('student.index') }}">{{ __('Student') }}</a>
+							</li>
+							<li class="breadcrumb-item">
+								<a href="{{ route('student.create') }}">{{ __('Student Input') }}</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<hr>
 </div>
 <div class="pcoded-inner-content">
     <div class="main-body">
@@ -108,6 +108,13 @@
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">{{ __("Father's Phone No") }}</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="f_phone" name="f_phone" placeholder="Enter Father's Phone No">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("Mother's Name(Bengali)") }}</label>
                                         <div class="col-sm-10">
@@ -134,6 +141,13 @@
                                         <label class="col-sm-2 col-form-label">{{ __("Mother's Income") }}</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="m_income" name="m_income" placeholder="Enter Mother's Income">
+                                            <span class="messages"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">{{ __("Mother's Phone No") }}</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="m_phone" name="m_phone" placeholder="Enter Mother's Phone No">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
@@ -375,11 +389,7 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Addmission No') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
-                                            <input type="text" class="form-control" name="addmission_no" id="addission_no" placeholder=" Enter Addmission No">
-=======
                                             <input type="text" class="form-control" name="addmission_no" id="addmission_no" placeholder="Addmission No">
->>>>>>> 27109b44c7ce87ae050d1fc55d4c714f0608973f
                                             <span class="messages"></span>
                                         </div>
                                     </div>

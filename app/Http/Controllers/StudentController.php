@@ -10,6 +10,12 @@ use App\Student;
 
 class StudentController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -49,10 +55,12 @@ class StudentController extends Controller
         $student->f_name_en = $request->f_name_en;
         $student->f_occupation = $request->f_occupation;
         $student->f_income = $request->f_income;
+        $student->f_phone = $request->f_phone;
         $student->m_name_bn = $request->m_name_bn;
         $student->m_name_en = $request->m_name_en;
         $student->m_occupation = $request->m_occupation;
         $student->m_income = $request->m_income;
+        $student->m_phone = $request->m_phone;
         $student->p_village = $request->p_village;
         $student->p_house = $request->p_house;
         $student->p_post = $request->p_post;
@@ -86,7 +94,6 @@ class StudentController extends Controller
             $image->move($destinationPath, $name);
             $student->image = $name;
         }
-
         $student->save();
 
         $office = new Official();
@@ -158,10 +165,12 @@ class StudentController extends Controller
         $student->f_name_en = $request->f_name_en;
         $student->f_occupation = $request->f_occupation;
         $student->f_income = $request->f_income;
+        $student->f_phone = $request->f_phone;
         $student->m_name_bn = $request->m_name_bn;
         $student->m_name_en = $request->m_name_en;
         $student->m_occupation = $request->m_occupation;
         $student->m_income = $request->m_income;
+        $student->m_phone = $request->m_phone;
         $student->p_village = $request->p_village;
         $student->p_house = $request->p_house;
         $student->p_post = $request->p_post;
