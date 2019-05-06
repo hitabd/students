@@ -78,16 +78,16 @@
                                                                     <span class="feather icon-eye"></span>
                                                                 </a>
                                                                 <a href="{{ route('student.edit', $student->id) }}" type="button" class="btn btn-primary waves-effect waves-light" 
-                                                                    style="float: none;margin: 5px;">
+                                                                    style="float: none; margin: 5px;">
                                                                     <span class="feather icon-edit"></span>
                                                                 </a>
-                                                                <form action="{{ route('student.destroy', $student->id) }}" onclick="return confirm('{{ __('Are you sure you want to delete this Student?') }}');" method="POST">
+                                                                <form id="del" action="{{ route('student.destroy', $student->id) }}" onclick="return confirm('{{ __('Are you sure you want to delete this Student?') }}');" method="POST">
                                                                     @method('DELETE')
                                                                     @csrf
-                                                                    <button class="btn btn-sm btn-danger waves-effect waves-light" type="submit" style="float: none;margin: 5px;">
-                                                                        <span class="feather icon-trash"></span>
-                                                                    </button>
                                                                 </form>
+                                                                <a class="btn btn-danger waves-effect waves-light" onclick="document.getElementById('del').submit();" style="float: none;margin: 5px;">
+                                                                    <span class="feather icon-trash"></span>
+                                                                </a>
                                                             </div>
                                                         </div>
                                                     </td>

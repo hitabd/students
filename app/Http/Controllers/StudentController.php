@@ -105,7 +105,7 @@ class StudentController extends Controller
         $madrasha ->student_id = $student->id;
         $madrasha ->save();
 
-        $request->session()->flash('message', 'Student Recorded Successfully!!');
+        Session::flash('message', 'Student Recorded Successfully!!');
         return redirect()->route('student.index');
     }
 
@@ -187,7 +187,7 @@ class StudentController extends Controller
         $student->image = $name;
         $student->save();
 
-        $request->session()->flash('message', 'Student Recorded Successfully!!');
+        Session::flash('message', 'Student Recorded Successfully!!');
         return redirect()->route('student.index');
     }
 
@@ -200,7 +200,7 @@ class StudentController extends Controller
     public function destroy(Student $student)
     {
         $student->delete();
-        $request->session()->flash('message', 'Student Information Deleted Successfully!!');
+        Session::flash('message', 'Student Information Deleted Successfully!!');
         return redirect()->route('student.index');
     }
 }
