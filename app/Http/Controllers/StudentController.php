@@ -86,10 +86,6 @@ class StudentController extends Controller
             $image->move($destinationPath, $name);
             $student->image = $name;
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> 27109b44c7ce87ae050d1fc55d4c714f0608973f
         $student->save();
 
         $office = new Official();

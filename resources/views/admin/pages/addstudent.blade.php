@@ -375,11 +375,7 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Addmission No') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" name="addmission_no" id="addission_no" placeholder=" Enter Addmission No">
-=======
-                                            <input type="text" class="form-control" name="addmission_no" id="addmission_no" placeholder="Addmission No">
->>>>>>> 27109b44c7ce87ae050d1fc55d4c714f0608973f
                                             <span class="messages"></span>
                                         </div>
                                     </div>
