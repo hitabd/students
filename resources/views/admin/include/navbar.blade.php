@@ -86,6 +86,19 @@
                     </div>
                 </li>
                 <li class="user-profile header-notification">
+                        <div class="dropdown-primary dropdown">
+                            <div class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="../files/assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+                                <span>{{ __('ln') }}</span>
+                                <i class="feather icon-chevron-down"></i>
+                            </div>
+                            <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                <li>
+                                    <a class="dropdown-item" href="{{ URL::to('lang/bn') }}" id="bn">Bengali</a>
+                                    <a class="dropdown-item" href="{{ URL::to('lang/bn') }}" id="en">English</a>
+                                </li>
+                            </ul>
+                        </div>
                     <div class="dropdown-primary dropdown">
                         <div class="dropdown-toggle" data-toggle="dropdown">
                             <img src="../files/assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">

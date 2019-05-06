@@ -11,7 +11,7 @@
                 <i class="feather icon-home bg-c-blue"></i>
                 <div class="d-inline">
                     <h5>Dashboard</h5>
-                    <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                    <span></span>
                 </div>
             </div>
         </div>
