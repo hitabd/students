@@ -1,5 +1,8 @@
 {
     "ln":"en",
     "Student Information":"Student Information",
-    "Student":"Student"
+    "Student":"Student",
+    "Delete Student Information":"Delete Student Information",
+    "Update Student":"Update Student",
+    "":""
 }

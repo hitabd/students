@@ -37,7 +37,7 @@ class CreateStudentsTable extends Migration
             $table->string('per_post');
             $table->string('per_thana');
             $table->string('per_district');
-            $table->string('dob');
+            $table->date('dob');
             $table->string('b_group')->nullable();
             $table->string('height')->nullable();
             $table->string('weight')->nullable();
