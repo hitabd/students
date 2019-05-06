@@ -24,3 +24,4 @@ Route::get('lang/{locale}', 'LocalizationController@index');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('student', 'StudentController');
+Route::get('student/academic/{id}','StudentController@academic')->name('student.academic');

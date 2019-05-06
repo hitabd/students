@@ -86,10 +86,7 @@ class StudentController extends Controller
             $image->move($destinationPath, $name);
             $student->image = $name;
         }
-<<<<<<< HEAD
 
-=======
->>>>>>> 27109b44c7ce87ae050d1fc55d4c714f0608973f
         $student->save();
 
         $office = new Official();
@@ -135,6 +132,13 @@ class StudentController extends Controller
     public function edit(Student $student)
     {
         return view('admin.pages.editstudent', compact('student'));
+    }
+    public function academic($id){
+         $student = Student::find($id);
+        $premadrasha = preMadrasha::where('student_id',$id)->first();
+        $official =  Official::where('student_id',$id)->first();
+        // dd($premadrasha, $official);
+        return view('admin.pages.academic',compact('premadrasha','official','student'));
     }
 
     /**
