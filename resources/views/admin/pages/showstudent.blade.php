@@ -93,7 +93,7 @@
                                     <label class="col-sm-1 col-form-label">:</label>
                                     <label class="col-sm-4 col-form-label">{{ $student->b_group }}</label>
                                 </div>
-                                <div class="form-group row">
+                                {{-- <div class="form-group row">
                                     <label class="col-sm-3 col-form-label"><b>{{ __('Students Height') }}</b></label>
                                     <label class="col-sm-1 col-form-label">:</label>
                                     <label class="col-sm-4 col-form-label">{{ $student->height }}</label>
@@ -114,7 +114,7 @@
                                         class="col-sm-3 col-form-label"><b>{{ __('Students Birth Sign') }}</b></label>
                                     <label class="col-sm-1 col-form-label">:</label>
                                     <label class="col-sm-4 col-form-label">{{ $student->b_sign }}</label>
-                                </div>
+                                </div> --}}
                                 <div class="form-group row">
                                     <span class="badge badge-primary"
                                         style="height:2 rem; font-size:20px; text-align:center;">{{ __('Father Information') }}</span>
@@ -146,9 +146,66 @@
                                     <label class="col-sm-1 col-form-label">:</label>
                                     <label class="col-sm-4 col-form-label"></label>
                                 </div>
+                                <div class="form-group row">
+                                        <span class="badge badge-primary"
+                                            style="height:2 rem; font-size:20px; text-align:center;">{{ __('Mother Information') }}</span>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label
+                                            class="col-sm-3 col-form-label"><b>{{ __("Mother's Name (Bengali)") }}</b></label>
+                                        <label class="col-sm-1 col-form-label">:</label>
+                                        <label class="col-sm-4 col-form-label">{{ $student->m_name_bn }}</label>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label"><b>{{ __("Mother's Name") }}</b></label>
+                                        <label class="col-sm-1 col-form-label">:</label>
+                                        <label class="col-sm-4 col-form-label">{{ $student->m_name_en }}</b></label>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label
+                                            class="col-sm-3 col-form-label"><b>{{ __("Mother's Occupation") }}</b></label>
+                                        <label class="col-sm-1 col-form-label">:</label>
+                                        <label class="col-sm-4 col-form-label">{{ $student->m_occupation }}</label>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label"><b>{{ __("Mother's Income") }}</b></label>
+                                        <label class="col-sm-1 col-form-label">:</label>
+                                        <label class="col-sm-4 col-form-label">{{ $student->m_income }}</label>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label"><b>{{ __("Mother's Phone NO") }}</b></label>
+                                        <label class="col-sm-1 col-form-label">:</label>
+                                        <label class="col-sm-4 col-form-label"></label>
+                                    </div>
                             </div>
                             <div class="col-sm-12 col-xl-6 m-b-30">
-                                <div class="form-group row">
+                                    <div class="form-group row">
+                                        <span class="badge badge-primary"
+                                            style="height:2 rem; font-size:20px; text-align:center;"></span>
+                                    </div>
+                                    <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label"><b>{{ __('Students Height') }}</b></label>
+                                            <label class="col-sm-1 col-form-label">:</label>
+                                            <label class="col-sm-4 col-form-label">{{ $student->height }}</label>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label"><b>{{ __('Students Weight') }}</b></label>
+                                            <label class="col-sm-1 col-form-label">:</label>
+                                            <label class="col-sm-4 col-form-label">{{ $student->weight }}</label>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label
+                                                class="col-sm-3 col-form-label"><b>{{ __('Students Skin Color') }}</b></label>
+                                            <label class="col-sm-1 col-form-label">:</label>
+                                            <label class="col-sm-4 col-form-label">{{ $student->skin_color }}</label>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label
+                                                class="col-sm-3 col-form-label"><b>{{ __('Students Birth Sign') }}</b></label>
+                                            <label class="col-sm-1 col-form-label">:</label>
+                                            <label class="col-sm-4 col-form-label">{{ $student->b_sign }}</label>
+                                        </div>
+                                {{-- <div class="form-group row">
                                     <span class="badge badge-primary"
                                         style="height:2 rem; font-size:20px; text-align:center;">{{ __('Mother Information') }}</span>
                                 </div>
@@ -177,8 +234,13 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label"><b>{{ __("Mother's Phone NO") }}</b></label>
                                     <label class="col-sm-1 col-form-label">:</label>
+<<<<<<< Updated upstream
                                     <label class="col-sm-4 col-form-label">{{ $student->m_phone }}</label>
                                 </div>
+=======
+                                    <label class="col-sm-4 col-form-label"></label>
+                                </div> --}}
+>>>>>>> Stashed changes
                                 <div class="form-group row">
                                     <span class="badge badge-primary"
                                         style="height:2 rem; font-size:20px; text-align:center;">{{ __('Present Address') }}

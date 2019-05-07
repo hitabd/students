@@ -9,6 +9,7 @@ use App\Official;
 use App\Student;
 use App\Upazila;
 use App\District;
+Use PDF;
 
 class StudentController extends Controller
 {
@@ -88,7 +89,7 @@ class StudentController extends Controller
             'lg_thana'=>'required',
             'lg_district'=>'required',
             'relationship'=>'required',
-            'phone'=>'required|digits_between:0,11',
+            'phone'=>'required|digits_between:9,15',
 
         ]);
 
@@ -270,5 +271,18 @@ class StudentController extends Controller
         $student->delete();
         Session::flash('message', 'Student Information Deleted Successfully!!');
         return redirect()->route('student.index');
+    }
+
+    public function GeneratePDF($id)
+    {
+        $data = [
+            'title' => 'First PDF for Medium',
+            'name' => "Salman",
+            ];
+          
+          $pdf = PDF::loadView('admin.myPDF', $data); 
+           
+          return $pdf->stream('medium.pdf');
+    
     }
 }

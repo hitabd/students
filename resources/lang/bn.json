@@ -6,8 +6,12 @@
     "Delete Student Information":"ছাত্রের তথ্য মুছে ফেলুন",
     "Update Student":"ছাত্রের তথ্য সংশোধন করুন",
     "Submit":"জমা দিন",
+<<<<<<< Updated upstream
     "Update":"সংশোধন",
     "Addmitted To Class":"ভর্তি করা হয়েছে",
+=======
+    "Addmitted To Class":"ভর্তি করা হয়েছে ( ক্লাশ )",
+>>>>>>> Stashed changes
     "Date":"তারিখ",
     "Addmission No":"ভর্তি নং",
     "Official Use Only":"অফিস কর্তৃক পূরণীয়",

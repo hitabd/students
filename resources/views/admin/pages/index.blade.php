@@ -59,9 +59,9 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                @foreach ($students as $student)
+                                                @foreach ($students as $key => $student)
                                                 <tr>
-                                                    <td>#</td>
+                                                    <td><b>{{ $key+1 }}</b></td>
                                                     <td>{{ $student->name_en }}</td>
                                                     <td>{{ $student->f_name_en }}</td>
                                                     <td>{{ $student->m_name_en }}</td>
@@ -80,6 +80,10 @@
                                                                 <a href="{{ route('student.edit', $student->id) }}" type="button" class="btn btn-primary waves-effect waves-light"
                                                                     style="float: none; margin: 5px;">
                                                                     <span class="feather icon-edit"></span>
+                                                                </a>
+                                                                <a href="{{ route('student.pdf', $student->id) }}" type="button" class="btn btn-info waves-effect waves-light"
+                                                                    style="float: none; margin: 5px;">
+                                                                    <span class="feather icon-download"></span>
                                                                 </a>
                                                                 <form id="del" action="{{ route('student.destroy', $student->id) }}" onclick="return confirm('{{ __('Are you sure you want to delete this Student?') }}');" method="POST">
                                                                     @method('DELETE')

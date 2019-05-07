@@ -17,12 +17,12 @@ Route::get('/', function () {
 });
 
 Route::get('lang/{locale}', 'LocalizationController@index');
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('lang/{locale}', 'LocalizationController@index');
 
 Auth::routes();
 
-Route::get('lang/{locale}', 'LocalizationController@index');
-Route::get('generate-pdf','HomeController@generatePDF');
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('student/download/{id}','StudentController@GeneratePDF')->name('student.pdf');
 
 Route::resource('student', 'StudentController');
 Route::get('student/academic/{id}','StudentController@academic')->name('student.academic');

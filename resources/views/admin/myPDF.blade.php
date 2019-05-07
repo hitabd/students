@@ -1,15 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Hi</title>
-</head>
-<body>
-	<h1>Welcome to ItSolutionStuff.com - {{ $title }}</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>আলহাজ্ব রহিমউল্লাহ মাদরাসা ও এতিমখানা</title>
+        <link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/css/pdf.css') }}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body class="bangla-font">
+    <h4 style="text-align:center">{{ $title }}</h4><br><br>
+    <p>আমি {{ $heading }} এই মর্মে অঙ্গিকার করছি যে, <br> </span><br><br>
+    <span>১) আমার প্রদত্ত তথ্য সমূহ সঠিক এবং নির্ভুল। কোন তথ্য গোপন করিনি বা মিথ্যা দেইনি। ঠিকানা, মোবাইল নম্বর <br></span>
+    <span>    পরিবর্তনের সাথে সাথে মাদ্রাসা কর্তৃপক্ষকে জানাব।<br></span><br>
+    <span>২) আমি প্রতিটি ক্লাসে ১০০% উপস্থিত থাকব। নিয়মিত ডায়েরী সংরক্ষণ করব। প্রতিটি সাপ্তাহিক/পাক্ষিক/মাসিক/ <br></span>
+    <span>    অর্ধবার্ষিক/টেস্ট ও ফাইনাল পরীক্ষায় অংশগ্রহণ করব। উক্ত পরীক্ষাগুলো গুরুত্বপূর্ণ এবং অংশগ্রনণপূর্বক সব <br></span>
+    <span>    পরীক্ষায় পাশ করা বাধ্যতামূলক। অকৃতকার্য হলে মাদরাসা কর্তৃপক্ষের সদ্ধান্তই চূড়ান্ত বলে বিবেচিত হবে। এক্ষেত্রে <br></span>
+    <span>    আমি / অভিভাবক কোন প্রকার সুপারিশ করব না।<br></span><br>
+    <span>৩) আমি স্বেচ্ছায় বা অন্যের দ্বারা প্ররোচিত হয়ে মাদরাসার শিক্ষার পরিবেশ শান্তি ও নিয়ম-শৃঙ্খলা বিনষ্ট হতে পারে এমন <br></span>
+    <span>    কোন আচরন/কর্মকান্ড করব না।<br></span><br>
+    <span>৪) আযান হওয়ার সাথে সাথে মসজিদে প্রবেশ করব। যে সকল ফরজ নামাজের আগে বা পরে সুন্নাত আছে তা আদায় <br></span>
+    <span>    করব এবং মসজিদের আদব-কায়দা রক্ষা করে চলব।<br></span><br>
+    <span>৫) মাদরাসার নিয়ম অনুযায়ী ক্যাম্পাসে ছবি বিহীন ফুল/হাফ হাতা সাদা গেঞ্জি ব্যতীত অন্য কোন গেঞ্জি পরব না। <br></span><br>
+    <span>৬) আমি নিম্নলিখিত শর্তগুলো যথাযথভাবে মেনে চলব-<br></span>
+    <span>     (ক) ডাইনিং এর পরিবেশ রক্ষা করা<br></span>
+    <span>     (খ) ভাত, ডাল, পানি ও অন্যান্য খাবার অপচয় না করা<br></span>
+    <span>     (গ) মাদরাসা ক্যাম্পাসে রাখা ফুল গাছের পাতা বা ফুল না ছেঁড়া<br></span>
+    <span>     (ঘ) বেডরুম, ক্লাসরুম ও বাথ্রুম পরিস্কার-পরিচ্ছন্ন রাখব<br></span>
+    <span>     (ঙ) পানির ট্যাপ ঘুরিয়ে না ভাঙ্গা<br></span>
+    <span>     (চ) পানি ও বিদ্যুৎ অপচয় না করা<br></span>
+    <span>     (ছ) যেখানে সেখানে থুথু না ফেলা<br></span>
+    <span>     (জ) রাতে ছাদে অবস্থান না করা<br></span>
+    <span>     (ঝ) রাত্রি কালীন ক্লাস শেষে নিয়ম মাফিক আবাসিক রুমে গিয়ে ঘুমিয়ে পড়া-উপর্যুক্ত নিয়ম যথাযথভাবে মেনে চলা।<br></span><br>
+    <span>৭) মাদরাসা ক্যাম্পাসে ব্যক্তিগত মোবাইল ফোন ব্যবহার করব না। পরিবারের সাথে যোগাযোগ করার জন্য মাদরাসা <br></span>
+    </span>     অফিসের মোবাইল ফোন ব্যবহার করব।<br></span><br>
+    <span>৮) সব সময় পরিস্কার-পরিচ্ছন্ন থাকব ও মাদরাসার নির্দিষ্ট ইউনিফরম পরব এবং আইডি কার্ড ব্যবহার করব।<br></span><br>
+    <span>৯) বিনা অনুমতিতে তিন দিনের বেশী মাদরাসায় অনুপস্থিত থাকলে, জরিমানা/বিলম্ব ফি দিতে বাধ্য থাকব।<br></span><br>
+    <span>১০) আমার অভিভাবকগন মাদরাসা প্রধান/কর্তৃপক্ষের সাথে যাতে নিয়মিত যোগাযোগ রাখেন সে ব্যাপারে সচেষ্ট <br></span> 
+    <span>      থাকব।<br></span><br>
+    <span>১১) আমি অবগত আছি যে, মাদরাসা থেকে কোন ছাত্র বিনা অনুমতিতে বাইরে গিয়ে হারিয়ে গেলে, কোন মিটিং মিছিলে<br></span>
+    <span>    অংশগ্রহণ করলে বা কোন দুর্ঘটনার শিকার হয়ে মারা গেলে কর্তৃপক্ষ দায়ী থাকবে না।<br></span><br>
+    <span>১২) আমি অবগত আছি যে, দলগত ভাবে শিক্ষার্থীরা কোন শিক্ষকের ব্যাপারে প্রতিষ্ঠান প্রধানের নিকট অভিযোগ করতে<br></span>
+    <span>      পারবে না।<br></span><br>
+    <span>১৩) আমি আরো অবগত আছি যে, উপরোক্ত শর্তভঙ্গ ছারাও কোন পরীক্ষায় নকল বা অসদুপায় অবলম্বন, ধুমপান বা <br></span>
+    <span>      নেশা করলে, প্রেমঘটিত বা অসামাজিক ও অনৈতিক কাজে লিপ্ত হলে, রাজনীতিতে সম্পৃক্ত হলে, গ্রুপিং করলে, <br></span>
+    <span>      দাঙ্গা-হাঙ্গামা বা মারামারি করলে কোন কারণ দর্শানো ছাড়াই মাদরাসা কর্তৃপক্ষ আমার ভর্তি বাতিলসহ শাস্তিমূলক ব্যবস্থা<br></span>
+    <span>      নিতে পারবেন। যে কোন অনাকাঙ্খিত ঘটনার জন্য মাদরাসা কর্তৃপক্ষ দায়ী থাকবে না। মাদরাসার স্বার্থে মাদরাসা কর্তৃপক্ষের <br></span>
+    <span>      যে কোন সিদ্ধান্ত আমি মেনে নিতে বাধ্য থাকব।<br></span><br>
+    <span>১৪) আমি আরো অবগত আছি যে, অভিভাবক/আত্মীয়কে মাদরাসা হোস্টেলে আপ্যায়ন করতে হলে খাবার দেওয়ার<br></span>
+    <span>      পূর্বে ম্যানেজারকে জানাতে হবে। এছাড়া জরুরী প্রয়োজনে দূরাগত অভিভাবককে কর্তৃপক্ষের অনুমতি সাপেক্ষে <br></span>
+    <span>      মাদরাসায় রাত্রি যাপন করতে পারবে, কিন্তু কোন শিক্ষার্থী কর্তৃপক্ষের অনুমতি ব্যতীত অপরিচিত ব্যাক্তি/আত্মীয়কে <br></span>
+    <span>      মাদরাসায় রাত্রি যাপনের সুযোগ দিতে পারবে না।<br></span><br>
+    <span>
+    <span>১৫) আমি মাদরাসার বর্তমান ও ভবিষ্যতে প্রবর্তিত সকল নিয়ম-কানুন এবং মাদরাসা কর্তৃপক্ষের নির্দেশ যথাযথভাবে <br></span>
+    <span>      মেনে চলব।<br></span><br>
+    <span>
+    <span>      উপর্যুক্ত শর্তগুলো আমি/আমার অভিভাবক কারো দ্বারা প্ররোচিত না হয়ে সুস্থ মস্তিষ্কে ও স্বজ্ঞানে মেনে নিয়ে এই <br></span>
+    <span>      অঙ্গীকার নামায় স্বাক্ষর করলাম। উপরোক্ত অঙ্গীকার রক্ষার ব্যাপারে আমি/আমার অভিভাবক সচেতন থাকবো <br></span>
+    <span>      এবং মাদরাসার সব নিয়ম কানুন বাস্তবায়নে আন্তরিক সহযোগিতা করব। আমি আবেদন ফর্মের সব শর্ত মেনে <br></span>
+    </span>     আলহাজ্ব রহিমুল্লাহ মাদরাসায়  শ্রেনীতে ভর্তি হলাম।<br></span>
+        </p>
+        <div>
+            <div class="row col-md-12">
+                <div class="col-md-4">
+                    <h6>-----------------------------</h6><br>
+                    <h6>অভিভাবকের স্বাক্ষর ও তারিখ A</h6>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h6>-----------------------------</h6><br>
+                    <h6>শিক্ষার্থীর স্বাক্ষর ও তারিখ B</h6>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
