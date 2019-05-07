@@ -56,22 +56,14 @@
                                         <div class="col-sm-10">
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
-<<<<<<< HEAD
-                                                    
-=======
                                                     <input class="form-check-input" type="radio" name="residensial" id="r1" value="1" > {{ __('Residensial') }}
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                                 </label>
                                                 <input class="form-check-input" type="radio" name="residensial"
                                                         id="r1" value="1" checked> Residensial
                                             </div>
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
-<<<<<<< HEAD
-                                                    
-=======
                                                     <input class="form-check-input" type="radio" name="residensial" id="r2" value="0" > {{ __('Non-Residensial') }}
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                                 </label>
                                                 <input class="form-check-input" type="radio" name="residensial"
                                                         id="r2" value="0" > Non-Residensial
@@ -89,21 +81,6 @@
                                     </div>
 
                                     <div class="form-group row">
-<<<<<<< HEAD
-                                        <label class="col-sm-2 col-form-label">{{ __('Student Name(Bengali)') }}</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="name_bn" id="name_bn"
-                                                placeholder="Enter Student Name" required>
-                                            <span class="messages"></span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">{{ __('Student Name(Block)') }}</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="name_en" id="name_en"
-                                                placeholder="English Block Letter" required>
-                                            <span class="messages"></span>
-=======
                                             <label class="col-sm-2 col-form-label">{{ __('Student Name(Bengali)') }}</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" name="name_bn" id="name_bn" placeholder="{{ __('Enter Student Name') }}">
@@ -116,58 +93,24 @@
                                                 <input type="text" class="form-control" name="name_en" id="name_en" placeholder="{{ __('English Block Letter') }}">
                                                 <span class="messages"></span>
                                             </div>
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label
                                             class="col-sm-2 col-form-label">{{ __("Father's Name(Bengali)") }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
-                                            <input type="text" class="form-control" name="f_name_bn" id="f_name_bn"
-                                                placeholder="Enter Father's Name" required>
-=======
                                             <input type="text" class="form-control" name="f_name_bn" id="f_name_bn" placeholder="{{ __("Enter Father's Name") }}">
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("Father's Name(Block)") }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
-                                            <input type="text" class="form-control" name="f_name_en" id="f_name_en"
-                                                placeholder="English Block Letter" required>
-=======
                                             <input type="text" class="form-control" name="f_name_en" id="f_name_en" placeholder="{{ __('English Block Letter') }}">
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-<<<<<<< HEAD
-                                        <label class="col-sm-2 col-form-label">{{ __("Father's Occupation") }}</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="f_occupation"
-                                                name="f_occupation" placeholder=" Enter Father's Occupation" required>
-                                            <span class="messages"></span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">{{ __("Father's Income") }}</label>
-                                        <div class="col-sm-10">
-                                            <input type="number" class="form-control" id="f_income" name="f_income"
-                                                placeholder="Enter Father's Income" required>
-                                            <span class="messages"></span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">{{ __("Father's Phone No") }}</label>
-                                        <div class="col-sm-10">
-                                            <input type="tel" pattern="[0-9]{11}" class="form-control" id="f_phone"
-                                                name="f_phone" placeholder="Enter Father's Phone No" required>
-                                            <span class="messages"></span>
-=======
                                             <label class="col-sm-2 col-form-label">{{ __("Father's Occupation") }}</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" id="f_occupation" name="f_occupation" placeholder=" {{ __("Enter Father's Occupation") }}">
@@ -187,121 +130,72 @@
                                                 <input type="text" class="form-control" id="f_phone" name="f_phone" placeholder="{{ __("Enter Father's Phone No") }}">
                                                 <span class="messages"></span>
                                             </div>
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label
                                             class="col-sm-2 col-form-label">{{ __("Mother's Name(Bengali)") }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
-                                            <input type="text" class="form-control" name="m_name_bn" id="m_name_bn"
-                                                placeholder="Enter Mother's Name" required>
-                                            <span class="messages"></span>
-=======
                                         <input type="text" class="form-control" name="m_name_bn" id="m_name_bn" placeholder="{{ __("Enter Mother's Name") }}">
                                         <span class="messages"></span>
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("Mother's Name(Block)") }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
-                                            <input type="text" class="form-control" name="m_name_en" id="m_name_en"
-                                                placeholder="English Block Letter" required>
-                                            <span class="messages"></span>
-=======
                                         <input type="text" class="form-control" name="m_name_en" id="m_name_en" placeholder="{{ __('English Block Letter') }}">
                                         <span class="messages"></span>
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("Mother's Occupation") }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
-                                            <input type="text" class="form-control" id="m_occupation"
-                                                name="m_occupation" placeholder="Enter Mother's Occupation" required>
-=======
                                             <input type="text" class="form-control" id="m_occupation" name="m_occupation" placeholder="{{ __("Enter Mother's Occupation") }}">
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("Mother's Income") }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
-                                            <input type="number" class="form-control" id="m_income" name="m_income"
-                                                placeholder="Enter Mother's Income">
-=======
                                             <input type="text" class="form-control" id="m_income" name="m_income" placeholder="{{ __("Enter Mother's Income") }}">
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("Mother's Phone No") }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
-                                            <input type="tel" pattern="[0-9]{11}" class="form-control" id="m_phone"
-                                                name="m_phone" placeholder="Enter Mother's Phone No">
-=======
                                             <input type="text" class="form-control" id="m_phone" name="m_phone" placeholder="{{ __("Enter Mother's Phone No") }}">
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="card-header">
-<<<<<<< HEAD
-                                        <h5>{{ __("PresentAddress") }}</h5>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">{{ __("Village") }}</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="p_village" name="p_village"
-                                                placeholder="Enter Present Village Name" required>
-=======
                                             <h5>{{ __("Present Address") }}</h5>
                                         </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("Village") }}</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="p_village" name="p_village" placeholder="{{ __('Enter Present Village Name') }}">
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("House No") }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
-                                            <input type="text" class="form-control" id="p_house" name="p_house"
-                                                placeholder="Enter Present HouseNo" required>
-=======
                                             <input type="text" class="form-control" id="p_house" name="p_house" placeholder="{{ __('Enter Present House No') }}">
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Post Office') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
-                                            <input type="text" class="form-control" id="p_post" name="p_post"
-                                                placeholder="Enter Present Post Office" required>
-=======
                                             <input type="text" class="form-control" id="p_post" name="p_post" placeholder="{{ __('Enter Present Post Office') }}">
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <select class="form-control js-example-basic-single" id="p_thana" name="p_thana">
                                                 <optgroup label="{{ __('Thana') }}">
                                                     <option>{{ __('Select Thana') }}</option>
@@ -310,21 +204,11 @@
                                                     @endforeach
                                                 </optgroup>
                                             </select>
-=======
-<<<<<<< HEAD
-                                            <input type="text" class="form-control" id="p_thana" name="p_thana"
-                                                placeholder="Enter Present Thana" required>
-=======
-                                            <input type="text" class="form-control" id="p_thana" name="p_thana" placeholder="{{ __('Enter Present Thana') }}">
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
-                                            <span class="messages"></span>
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <select class="form-control js-example-basic-single" id="p_district" name="p_district">
                                                 <optgroup label="{{ __('District') }}">
                                                         <option>{{ __('Select District') }}</option>
@@ -333,19 +217,14 @@
                                                         @endforeach
                                                 </optgroup>
                                             </select>
-=======
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="p_district" name="p_district"
                                                 placeholder="Enter Present District" required>
-=======
+
                                             <input type="text" class="form-control" id="p_district" name="p_district" placeholder="{{ __('Enter Present District') }}">
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                             <span class="messages"></span>
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                         </div>
                                     </div>
                                     <div class="card-header">
-<<<<<<< HEAD
                                         <h5>{{ __('PermanantAddress') }}</h5>
                                     </div>
                                     <div class="form-group row">
@@ -353,43 +232,34 @@
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="per_village" name="per_village"
                                                 placeholder="Enter Permanant Village Name" required>
-=======
                                             <h5>{{ __('Permanant Address') }}</h5>
                                         </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Village') }}</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="per_village" name="per_village" placeholder="{{ __('Enter Permanant Village Name') }}">
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('House No') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="per_house" name="per_house"
                                                 placeholder="Enter Permanant House No" required>
-=======
                                             <input type="text" class="form-control" id="per_house" name="per_house" placeholder="{{ __('Enter Permanant House No') }}">
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Post Office') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="per_post" name="per_post"
                                                 placeholder="Enter Permanant Post Office" required>
-=======
                                             <input type="text" class="form-control" id="per_post" name="per_post" placeholder="{{ __('Enter Permanant Post Office') }}">
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-<<<<<<< HEAD
                                             <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
                                             <div class="col-sm-10">
                                                 <select class="form-control js-example-basic-single" id="per_thana" name="per_thana">
@@ -402,23 +272,18 @@
                                                     </optgroup>
                                                 </select>
                                             </div>
-=======
                                         <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="per_thana" name="per_thana"
                                                 placeholder="Enter Permanant Thana" required>
-=======
                                             <input type="text" class="form-control" id="per_thana" name="per_thana" placeholder="{{ __('Enter Permanant Thana') }}">
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                             <span class="messages"></span>
                                         </div>
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
+
                                             <select class="form-control js-example-basic-single" id="per_district" name="per_district">
                                                 <optgroup label="{{ __('District') }}">
                                                         <option>{{ __('Select District') }}</option>
@@ -427,15 +292,14 @@
                                                         @endforeach
                                                 </optgroup>
                                             </select>
-=======
-<<<<<<< HEAD
+
                                             <input type="text" class="form-control" id="per_district"
                                                 name="per_district" placeholder="Enter Permanant District" required>
-=======
+
                                             <input type="text" class="form-control" id="per_district" name="per_district" placeholder="{{ __('Enter Permanant District') }}">
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
+
                                             <span class="messages"></span>
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
+
                                         </div>
                                     </div>
 
@@ -449,14 +313,12 @@
                                             <span class="messages"></span>
                                         </div>
                                     </div>
-<<<<<<< HEAD
                                     <div class="card-header">
                                         <h5>{{ __('StudentIdentification') }}</h5>
                                     </div>
-=======
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
+
                                     <div class="form-group row">
-<<<<<<< HEAD
+
                                             <label class="col-sm-2 col-form-label">{{ __('Blood Group') }}</label>
                                             <div class="col-sm-10">
                                                 <select class="form-control js-example-basic-single" id="b_group" name="b_group">
@@ -473,183 +335,126 @@
                                                     </optgroup>
                                                 </select>
                                             </div>
-=======
+
                                         <label class="col-sm-2 col-form-label">{{ __('Blood Group') }}</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="b_group" name="b_group"
                                                 placeholder="Enter Blood Group" required>
                                             <span class="messages"></span>
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
+
                                         </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Height') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
+
                                             <input type="text" class="form-control" id="height" name="height" placeholder="{{ __('Enter Height') }}">
-=======
+
                                             <input type="text" class="form-control" id="height" name="height"
                                                 placeholder="Enter Height">
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
+
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Weight') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
+
                                             <input type="text" class="form-control" id="weight" name="weight" placeholder="{{ __('Enter Weight') }}">
-=======
+
                                             <input type="text" class="form-control" id="weight" name="weight"
                                                 placeholder="Enter Weight">
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
+
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Skin Color') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
+
                                             <input type="text" class="form-control" id="skin_color" name="skin_color" placeholder="{{ __('Enter Skin Color') }}">
-=======
+
                                             <input type="text" class="form-control" id="skin_color" name="skin_color"
                                                 placeholder="Enter Skin Color">
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
+
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Birth Sign') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="b_sign" name="b_sign" placeholder=" {{ __('Enter Birth Sign') }}">
-=======
-                                            <input type="text" class="form-control" id="b_sign" name="b_sign"
-                                                placeholder=" Enter Birth Sign">
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="card-header">
-<<<<<<< HEAD
-                                        <h5>{{ __('AbsenseofFather') }}</h5>
-                                    </div>
-=======
                                             <h5>{{ __('Absense of Father') }}</h5>
                                         </div>
->>>>>>> 2fa563d3ac020d1d719faed8abfff68f00f0d8ef
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('legal Guardian Name') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="lg_name" name="lg_name" placeholder="{{ __('Enter legal Guardian Name') }}">
-=======
-                                            <input type="text" class="form-control" id="lg_name" name="lg_name"
-                                                placeholder="Enter legal Guardian Name" required>
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Village') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="lg_village" name="lg_village" placeholder="{{ __('Enter Village') }}">
-=======
-                                            <input type="text" class="form-control" id="lg_village" name="lg_village"
-                                                placeholder="Enter Village" required>
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('House No') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="lg_house" name="lg_house" placeholder="{{ __('Enter House No') }}">
-=======
-                                            <input type="text" class="form-control" id="lg_house" name="lg_house"
-                                                placeholder="Enter House No" required>
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Post Office') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="lg_post" name="lg_post" placeholder="{{ __('Enter Post Office') }}">
-=======
-                                            <input type="text" class="form-control" id="lg_post" name="lg_post"
-                                                placeholder="Enter Post Office" required>
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-<<<<<<< HEAD
-                                            <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
-                                            <div class="col-sm-10">
-                                                <select class="form-control js-example-basic-single" id="lg_thana" name="lg_thana">
-                                                    <optgroup label="{{ __('Thana') }}">
-                                                        <option>{{ __('Select Thana') }}</option>
-                                                        @foreach ($thanas as $thana)
-                                                        <option value="{{ $thana->name }}">{{ $thana->name }}</option>
-                                                        @endforeach
-
-                                                    </optgroup>
-                                                </select>
-                                            </div>
-=======
                                         <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="lg_thana" name="lg_thana"
-                                                placeholder="Enter Thana" required>
-                                            <span class="messages"></span>
+                                            <select class="form-control js-example-basic-single" id="lg_thana" name="lg_thana">
+                                                <optgroup label="{{ __('Thana') }}">
+                                                    <option>{{ __('Select Thana') }}</option>
+                                                    @foreach ($thanas as $thana)
+                                                    <option value="{{ $thana->name }}">{{ $thana->name }}</option>
+                                                    @endforeach
+                                                </optgroup>
+                                            </select>
                                         </div>
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <select class="form-control js-example-basic-single" id="lg_district" name="lg_district">
                                                 <optgroup label="{{ __('District') }}">
-                                                        <option>{{ __('Select District') }}</option>
-                                                        @foreach ($districts as $district)
-                                                        <option value="{{ $district->id }}">{{ $district->name }}</option>
-                                                        @endforeach
+                                                    <option selected>{{ __('Select District') }}</option>
+                                                    @foreach ($districts as $district)
+                                                    <option value="{{ $district->id }}">{{ $district->name }}</option>
+                                                    @endforeach
                                                 </optgroup>
                                             </select>
-=======
-                                            <input type="text" class="form-control" id="lg_district" name="lg_district"
-                                                placeholder="Enter District" required>
-                                            <span class="messages"></span>
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label
                                             class="col-sm-2 col-form-label">{{ __('Relationship With Guardian') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="relationship" name="relationship" placeholder="{{ __('Enter Relationship With Guardian') }}">
-=======
-                                            <input type="text" class="form-control" id="relationship"
-                                                name="relationship" placeholder="Enter Relationship With Guardian"
-                                                required>
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Phone') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="phone" name="phone" placeholder="{{ __('Enter Phone Number') }}">
-=======
-                                            <input type="tel" pattern="[0-9]{11}" class="form-control" id="phone"
-                                                name="phone" placeholder="Enter Phone Number">
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
@@ -659,84 +464,49 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Exam/Class name') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="exam_class_name" name="exam_class_name" placeholder="{{ __('Enter Exam/Class name') }}">
-=======
-                                            <input type="text" class="form-control" id="exam_class_name"
-                                                name="exam_class_name" placeholder="Enter Exam/Class name">
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Institute Name') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="institute_name" name="institute_name" placeholder="{{ __('Enter Institute Name') }}">
-=======
-                                            <input type="text" class="form-control" id="institute_name"
-                                                name="institute_name" placeholder="Enter Institute Name">
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Result') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="result" name="result" placeholder="{{ __('Enter Result') }}">
-=======
-                                            <input type="text" class="form-control" id="result" name="result"
-                                                placeholder="Enter Result">
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Passing Year') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="pass_year" name="pass_year" placeholder="{{ __('Enter Passing Year') }}">
-=======
-                                            <input type="text" class="form-control" id="pass_year" name="pass_year"
-                                                placeholder="Enter Passing Year">
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Board') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="board" name="board" placeholder="{{ __('Enter Board Name') }}">
-=======
-                                            <input type="text" class="form-control" id="board" name="board"
-                                                placeholder="Enter Board Name">
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Document No') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="document_no" name="document_no" placeholder="{{ __('Enter Document No') }}">
-=======
-                                            <input type="text" class="form-control" id="document_no" name="document_no"
-                                                placeholder="Enter Document No">
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Addmission Class') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" id="addmission_class" name="addmission_class" placeholder="{{ __('Enter Addmission Class') }}">
-=======
-                                            <input type="text" class="form-control" id="addmission_class"
-                                                name="addmission_class" placeholder="Enter Addmission Class">
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
@@ -746,12 +516,7 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Addmission No') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" name="addmission_no" id="addmission_no" placeholder="{{ __('Addmission No') }}">
-=======
-                                            <input type="text" class="form-control" name="addmission_no"
-                                                id="addmission_no" placeholder="Addmission No" required>
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
@@ -765,24 +530,14 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Addmitted To Class') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" name="addmitted_to_class" id="addmitted_to_class" placeholder="{{ __('Enter Addmitted To Class') }}">
-=======
-                                            <input type="text" class="form-control" name="addmitted_to_class"
-                                                id="addmitted_to_class" placeholder="Enter Addmitted To">
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Roll No') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
                                             <input type="text" class="form-control" name="roll_no" id="roll_no" placeholder="{{ __('Enter Roll No') }}">
-=======
-                                            <input type="text" class="form-control" name="roll_no" id="roll_no"
-                                                placeholder="Enter Roll No">
->>>>>>> 7204d9fde15b955fe8864810f7abe6bba6bdd86d
                                             <span class="messages"></span>
                                         </div>
                                     </div>
