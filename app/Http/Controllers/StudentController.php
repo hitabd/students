@@ -50,7 +50,48 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request);
+
+        $student = $request->validate([
+            'residenttial' => 'required',
+            'name_bn' => 'required|max:25',
+            'name_en' => 'required|min:25',
+            'f_name_bn'=> 'required|max:25',
+            'f_name_en'=>'required|max:25',
+            'f_occupation'=>'required|max:25',
+            'f_income'=>'required|integer',
+            'f_phone'=>'required|digits_between:0,11',
+            'm_name_bn'=>'required|max:25',
+            'm_name_en'=>'required|max:25',
+            'm_occupation'=>'required|max:20',
+            'm_income'=>'required|integer',
+            'm_phone'=>'required|digits_between:0,11',
+            'p_village'=>'required',
+            'p_house'=>'required',
+            'p_post'=>'required',
+            'p_thana'=>'required',
+            'p_district'=>'required',
+            'per_village'=>'required',
+            'per_house'=>'required',
+            'per_post'=>'required',
+            'per_thana'=>'required',
+            'per_district'=>'required',
+            'dob'=>'required',
+            'b_group'=>'required',
+            'height'=>'required',
+            'weight'=>'required',
+            'skin_color'=>'',
+            'b_sign'=>'',
+            'lg_name'=>'required',
+            'lg_village'=>'required',
+            'lg_house'=>'required',
+            'lg_post'=>'required',
+            'lg_thana'=>'required',
+            'lg_district'=>'required',
+            'relationship'=>'required',
+            'phone'=>'required|digits_between:0,11',
+
+        ]);
+
         $student = new Student();
 
         $student->residensial = $request->residensial;

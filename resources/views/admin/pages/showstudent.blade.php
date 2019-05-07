@@ -33,7 +33,7 @@
                     @method('DELETE')
                     @csrf
                     <button class="btn btn-sm btn-danger waves-effect waves-light" type="submit">
-                        <i class="feather icon-trash">{{ __('Delete Student Information') }}</i>
+                        <i class="feather icon-trash">{{ __('Delete') }}</i>
                     </button>
                 </form>
             </div>
@@ -46,7 +46,7 @@
             <div class="float-right" style="padding:5px;">
                 <a href="{{ route('student.academic', $student->id) }}"
                     class="btn btn-sm btn-primary bg-c-blue waves-effect waves-light">
-                    <i class="feather icon-info">{{ __('Academic Info') }}</i>
+                    <i class="feather icon-info">{{ __('Academic') }}</i>
                 </a>
             </div>
         </div>
