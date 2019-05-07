@@ -2,7 +2,7 @@
     <div class="navbar-wrapper">
         <div class="navbar-logo">
             <a href="index.html">
-                <img class="img-fluid" src="../files/assets/images/logo.png" alt="Theme-Logo" />
+                <img class="img-fluid" src="{{ URL::to('admin/assets/images/logo.png') }}" alt="Theme-Logo" />
             </a>
             <a class="mobile-menu" id="mobile-collapse" href="#!">
                 <i class="feather icon-menu icon-toggle-right"></i>
@@ -33,7 +33,7 @@
                 </li>
             </ul>
             <ul class="nav-right">
-                
+
                 <li class="user-profile header-notification">
                         <div class="dropdown-primary dropdown">
                             <div class="dropdown-toggle" data-toggle="dropdown">
@@ -42,10 +42,10 @@
                             </div>
                             <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                                 <li>
-                                    <a class="dropdown-item" href="{{ URL::to('lang/bn') }}" id="bn">Bengali</a>
+                                    <a class="dropdown-item" href="{{ URL::to('lang/bn') }}" id="bn">{{ __('Bengali') }}</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="{{ URL::to('lang/en') }}" id="en">English</a>
+                                    <a class="dropdown-item" href="{{ URL::to('lang/en') }}" id="en">{{ __('English') }}</a>
                                 </li>
                             </ul>
                         </div>

@@ -85,7 +85,8 @@ class StudentController extends Controller
             'relationship'=>'required',
             'phone'=>'required|digits_between:0,11',
 
-        ])
+        ]);
+        
         $student = new Student();
 
         $student->residensial = $request->residensial;
