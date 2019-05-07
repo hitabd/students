@@ -113,6 +113,13 @@
     "Enter Permanant House No":"Enter Permanant House No",
     "Enter Permanant Village Name":"Enter Permanant Village Name",
     "Select District":"Select District",
-    "Select Thana":"Select Thana"
+    "Select Thana":"Select Thana",
+    "Select Blood Group":"Select Blood Group",
+    "Enter Height":"Enter Height",
+    "Enter Weight":"Enter Weight",
+    "Enter Skin Color":"Enter Skin Color",
+    "Enter Birth Sign":"Enter Birth Sign",
+    "Enter legal Guardian Name":"Enter legal Guardian Name"
+
 
 }

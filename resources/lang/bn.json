@@ -117,7 +117,29 @@
     "Enter Permanant House No":"স্থায়ী বাড়ি নং লিখুন",
     "Enter Permanant Village Name":"স্থায়ী গ্রামের নাম লিখুন",
     "Select District":"জেলা সিলেক্ট করুন",
-    "Select Thana":"থানা সিলেক্ট করুন"
+    "Select Thana":"থানা সিলেক্ট করুন",
+    "Select Blood Group":"রক্তের গ্রুপ সিলেক্ট করুন",
+    "Enter Height":"উচ্চতা লিখুন",
+    "Enter Weight":"ওজন লিখুন",
+    "Enter Skin Color":"গায়ের রঙ লিখুন",
+    "Enter Birth Sign":"বিশেষ চিহ্ন লিখুন",
+    "Enter Village":"গ্রামের নাম লিখুন",
+    "Enter House No":"বাড়ির নাম্বার লিখুন",
+    "Enter Phone Number":"মোবাইল নম্বর লিখুন",
+    "Enter Post Office":"পোস্ট অফিস লিখুন",
+    "Enter Addmission Class":"ভর্তি ক্লাস লিখুন",
+    "Enter Document No":"নথি নাম্বার লিখুন",
+    "Enter Board Name":"শিক্ষা বোর্ডের নাম লিখুন",
+    "Enter Passing Year":"পাসের সন লিখুন",
+    "Enter Result":"প্রাপ্ত ফলাফল লিখুন",
+    "Enter Institute Name":"প্রতিস্থানের নাম লিখুন",
+    "Enter Exam/Class name":"পরীক্ষার / শ্রেণির নাম লিখুন",
+    "Enter Addmission No":"ভর্তি নং লিখুন",
+    "Enter Addmitted To Class":"কোন ক্লাসে ভর্তি করা হয়েছে",
+    "Enter Roll No":"রোল নং লিখুন",
+    "Enter Relationship With Guardian":"অভিভাবকের সাথে সম্পর্ক লিখুন",
+    "Enter legal Guardian Name":"অভিভাবকের নাম লিখুন"
+
 
 
 

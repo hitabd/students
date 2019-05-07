@@ -177,7 +177,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label"><b>{{ __("Mother's Phone NO") }}</b></label>
                                     <label class="col-sm-1 col-form-label">:</label>
-                                    <label class="col-sm-4 col-form-label"></label>
+                                    <label class="col-sm-4 col-form-label">{{ $student->m_phone }}</label>
                                 </div>
                                 <div class="form-group row">
                                     <span class="badge badge-primary"
@@ -202,12 +202,18 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label"><b>{{ __('Thana') }}</b></label>
                                     <label class="col-sm-1 col-form-label">:</label>
-                                    <label class="col-sm-4 col-form-label">{{ $student->p_thana }}</label>
+                                    <?php
+                                        $p_thana = DB::table('upazilas')->where('upazilas.id',$student->p_thana)->select('name')->first();
+                                    ?>
+                                    <label class="col-sm-4 col-form-label">{{ $p_thana->name }}</label>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label"><b>{{ __('District') }}</b></label>
                                     <label class="col-sm-1 col-form-label">:</label>
-                                    <label class="col-sm-4 col-form-label">{{ $student->p_district }}</label>
+                                    <?php
+                                        $p_district = DB::table('districts')->where('districts.id',$student->p_district)->select('name')->first();
+                                    ?>
+                                    <label class="col-sm-4 col-form-label">{{ $p_district->name }}</label>
                                 </div>
                                 <div class="form-group row">
                                     <span class="badge badge-primary"
@@ -232,12 +238,18 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label"><b>{{ __('Thana') }}</b></label>
                                     <label class="col-sm-1 col-form-label">:</label>
-                                    <label class="col-sm-4 col-form-label">{{ $student->per_thana }}</label>
+                                    <?php
+                                        $per_thana = DB::table('upazilas')->where('upazilas.id',$student->per_thana)->select('name')->first();
+                                    ?>
+                                    <label class="col-sm-4 col-form-label">{{ $per_thana->name }}</label>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label"><b>{{ __('District') }}</b></label>
                                     <label class="col-sm-1 col-form-label">:</label>
-                                    <label class="col-sm-4 col-form-label">{{ $student->per_district }}</label>
+                                    <?php
+                                        $per_district = DB::table('districts')->where('districts.id',$student->per_district)->select('name')->first();
+                                    ?>
+                                    <label class="col-sm-4 col-form-label">{{ $per_district->name }}</label>
                                 </div>
                                 <div class="form-group row">
                                     <span class="badge badge-primary"
@@ -262,12 +274,18 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label"><b>{{ __('Thana') }}</b></label>
                                     <label class="col-sm-1 col-form-label">:</label>
-                                    <label class="col-sm-4 col-form-label">{{ $student->lg_thana }}</label>
+                                    <?php
+                                        $lg_thana = DB::table('upazilas')->where('upazilas.id',$student->lg_thana)->select('name')->first();
+                                    ?>
+                                    <label class="col-sm-4 col-form-label">{{ $lg_thana->name }}</label>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label"><b>{{ __('District') }}</b></label>
                                     <label class="col-sm-1 col-form-label">:</label>
-                                    <label class="col-sm-4 col-form-label">{{ $student->lg_district }}</label>
+                                    <?php use Illuminate\Support\Facades\DB;
+                                        $lg_district = DB::table('districts')->where('districts.id',$student->lg_district)->select('name')->first();
+                                    ?>
+                                    <label class="col-sm-4 col-form-label">{{ $lg_district->name }}</label>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label"><b>{{ __('Relation') }}</b></label>
