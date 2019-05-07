@@ -165,7 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        LynX39\LaraPdfMerger\PdfMergerServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -226,6 +226,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        'PdfMerger' => LynX39\LaraPdfMerger\Facades\PdfMerger::class,
     ],
 
 ];

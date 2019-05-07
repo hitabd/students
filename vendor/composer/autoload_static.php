@@ -350,6 +350,13 @@ class ComposerStaticInit82b7e6c8142a3dca33daabb0c880365f
                 0 => __DIR__ . '/..' . '/mockery/mockery/library',
             ),
         ),
+        'L' => 
+        array (
+            'LynX39\\LaraPdfMerger' => 
+            array (
+                0 => __DIR__ . '/..' . '/lynx39/lara-pdf-merger/src',
+            ),
+        ),
         'D' => 
         array (
             'Doctrine\\Common\\Lexer\\' => 
@@ -1937,6 +1944,9 @@ class ComposerStaticInit82b7e6c8142a3dca33daabb0c880365f
         'League\\Flysystem\\Util\\ContentListingFormatter' => __DIR__ . '/..' . '/league/flysystem/src/Util/ContentListingFormatter.php',
         'League\\Flysystem\\Util\\MimeType' => __DIR__ . '/..' . '/league/flysystem/src/Util/MimeType.php',
         'League\\Flysystem\\Util\\StreamHasher' => __DIR__ . '/..' . '/league/flysystem/src/Util/StreamHasher.php',
+        'LynX39\\LaraPdfMerger\\Facades\\PdfMerger' => __DIR__ . '/..' . '/lynx39/lara-pdf-merger/src/LynX39/LaraPdfMerger/Facades/PdfMerger.php',
+        'LynX39\\LaraPdfMerger\\PdfManage' => __DIR__ . '/..' . '/lynx39/lara-pdf-merger/src/LynX39/LaraPdfMerger/PdfManage.php',
+        'LynX39\\LaraPdfMerger\\PdfMergerServiceProvider' => __DIR__ . '/..' . '/lynx39/lara-pdf-merger/src/LynX39/LaraPdfMerger/PdfMergerServiceProvider.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV5' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV5.php',
         'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV6' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV6.php',

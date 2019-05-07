@@ -21,8 +21,7 @@ Route::get('lang/{locale}', 'LocalizationController@index');
 Auth::routes();
 
 Route::get('lang/{locale}', 'LocalizationController@index');
-
-
+Route::get('generate-pdf','HomeController@generatePDF');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('student', 'StudentController');
