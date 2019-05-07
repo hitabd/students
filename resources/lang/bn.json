@@ -6,6 +6,7 @@
     "Delete Student Information":"ছাত্রের তথ্য মুছে ফেলুন",
     "Update Student":"ছাত্রের তথ্য সংশোধন করুন",
     "Submit":"জমা দিন",
+    "Update":"সংশোধন",
     "Addmitted To Class":"ভর্তি করা হয়েছে",
     "Date":"তারিখ",
     "Addmission No":"ভর্তি নং",
@@ -114,7 +115,9 @@
     "Enter Permanant Thana":"স্থায়ী থানা লিখুন",
     "Enter Permanant Post Office":"স্থায়ী ডাক ঘর লিখুন",
     "Enter Permanant House No":"স্থায়ী বাড়ি নং লিখুন",
-    "Enter Permanant Village Name":"স্থায়ী গ্রামের নাম লিখুন"
+    "Enter Permanant Village Name":"স্থায়ী গ্রামের নাম লিখুন",
+    "Select District":"জেলা সিলেক্ট করুন",
+    "Select Thana":"থানা সিলেক্ট করুন"
 
 
 

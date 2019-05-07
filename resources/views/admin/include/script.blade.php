@@ -21,7 +21,10 @@
 	<script src="{{ asset('admin/assets/js/pcoded.min.js') }}"></script>
 	<script src="{{ asset('admin/assets/js/vertical/vertical-layout.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('admin/assets/pages/dashboard/custom-dashboard.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('admin/assets/js/script.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin/assets/js/script.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin/bower_components/select2/js/select2.full.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin/assets/js/jquery.quicksearch.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin/assets/pages/advance-elements/select2-custom.js') }}"></script>
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 	<script>

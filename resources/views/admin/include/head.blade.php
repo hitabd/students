@@ -31,4 +31,5 @@
 	<link rel="stylesheet" href="{{ asset('admin/bower_components/chartist/css/chartist.css') }}" type="text/css" media="all">
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/css/style.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/css/widget.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/css/widget.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/bower_components/select2/css/select2.min.css') }}" />

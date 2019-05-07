@@ -176,18 +176,27 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="p_thana" name="p_thana" placeholder="{{ __('Enter Present Thana') }}">
-                                            <span class="messages"></span>
-                                        </div>
+                                            <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
+                                            <select class="form-control js-example-basic-single col-sm-9" id="p_thana" name="p_thana">
+                                                <optgroup label="{{ __('Thana') }}">
+                                                    <option>Select Thana</option>
+                                                    @foreach ($thanas as $thana)
+                                                    <option value="">{{ $thana->name }}</option>
+                                                    @endforeach
+
+                                                </optgroup>
+                                            </select>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="p_district" name="p_district" placeholder="{{ __('Enter Present District') }}">
-                                            <span class="messages"></span>
-                                        </div>
+                                        <select class="form-control js-example-basic-single col-sm-9" id="p_district" name="p_district">
+                                            <optgroup label="{{ __('District') }}">
+                                                    <option>Select District</option>
+                                                    @foreach ($districts as $district)
+                                                    <option value="">{{ $district->name }}</option>
+                                                    @endforeach
+                                            </optgroup>
+                                        </select>
                                     </div>
                                     <div class="card-header">
                                             <h5>{{ __('Permanant Address') }}</h5>
@@ -214,18 +223,27 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="per_thana" name="per_thana" placeholder="{{ __('Enter Permanant Thana') }}">
-                                            <span class="messages"></span>
-                                        </div>
+                                            <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
+                                            <select class="form-control js-example-basic-single col-sm-9" id="per_thana" name="per_thana">
+                                                <optgroup label="{{ __('Thana') }}">
+                                                    <option>Select Thana</option>
+                                                    @foreach ($thanas as $thana)
+                                                    <option value="">{{ $thana->name }}</option>
+                                                    @endforeach
+
+                                                </optgroup>
+                                            </select>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="per_district" name="per_district" placeholder="{{ __('Enter Permanant District') }}">
-                                            <span class="messages"></span>
-                                        </div>
+                                        <select class="form-control js-example-basic-single col-sm-9" id="per_district" name="per_district">
+                                            <optgroup label="{{ __('District') }}">
+                                                    <option>Select District</option>
+                                                    @foreach ($districts as $district)
+                                                    <option value="">{{ $district->name }}</option>
+                                                    @endforeach
+                                            </optgroup>
+                                        </select>
                                     </div>
 
                                     <div class="card-header">
@@ -241,35 +259,35 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Blood Group') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="b_group" name="b_group" placeholder="Enter Blood Group">
+                                            <input type="text" class="form-control" id="b_group" name="b_group" placeholder="{{ __('Enter Blood Group') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Height') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="height" name="height" placeholder="Enter Height">
+                                            <input type="text" class="form-control" id="height" name="height" placeholder="{{ __('Enter Height') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Weight') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="weight" name="weight" placeholder="Enter Weight">
+                                            <input type="text" class="form-control" id="weight" name="weight" placeholder="{{ __('Enter Weight') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Skin Color') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="skin_color" name="skin_color" placeholder="Enter Skin Color">
+                                            <input type="text" class="form-control" id="skin_color" name="skin_color" placeholder="{{ __('Enter Skin Color') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Birth Sign') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="b_sign" name="b_sign" placeholder=" Enter Birth Sign">
+                                            <input type="text" class="form-control" id="b_sign" name="b_sign" placeholder=" {{ __('Enter Birth Sign') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
@@ -279,56 +297,65 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('legal Guardian Name') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="lg_name" name="lg_name" placeholder="Enter legal Guardian Name">
+                                            <input type="text" class="form-control" id="lg_name" name="lg_name" placeholder="{{ __('Enter legal Guardian Name') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Village') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="lg_village" name="lg_village" placeholder="Enter Village">
+                                            <input type="text" class="form-control" id="lg_village" name="lg_village" placeholder="{{ __('Enter Village') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('House No') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="lg_house" name="lg_house" placeholder="Enter House No">
+                                            <input type="text" class="form-control" id="lg_house" name="lg_house" placeholder="{{ __('Enter House No') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Post Office') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="lg_post" name="lg_post" placeholder="Enter Post Office">
+                                            <input type="text" class="form-control" id="lg_post" name="lg_post" placeholder="{{ __('Enter Post Office') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="lg_thana" name="lg_thana" placeholder="Enter Thana">
-                                            <span class="messages"></span>
-                                        </div>
+                                            <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
+                                            <select class="form-control js-example-basic-single col-sm-9" id="lg_thana" name="lg_thana">
+                                                <optgroup label="{{ __('Thana') }}">
+                                                    <option>{{ __('Select Thana') }}</option>
+                                                    @foreach ($thanas as $thana)
+                                                    <option value="">{{ $thana->name }}</option>
+                                                    @endforeach
+
+                                                </optgroup>
+                                            </select>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="lg_district" name="lg_district" placeholder="Enter District">
-                                            <span class="messages"></span>
-                                        </div>
+                                        <select class="form-control js-example-basic-single col-sm-9" id="lg_district" name="lg_district">
+                                            <optgroup label="{{ __('District') }}">
+                                                    <option>{{ __('Select District') }}</option>
+                                                    @foreach ($districts as $district)
+                                                    <option value="">{{ $district->name }}</option>
+                                                    @endforeach
+                                            </optgroup>
+                                        </select>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Relationship With Guardian') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="relationship" name="relationship" placeholder="Enter Relationship With Guardian">
+                                            <input type="text" class="form-control" id="relationship" name="relationship" placeholder="{{ __('Enter Relationship With Guardian') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Phone') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Phone Number">
+                                            <input type="text" class="form-control" id="phone" name="phone" placeholder="{{ __('Enter Phone Number') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
@@ -338,49 +365,49 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Exam/Class name') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="exam_class_name" name="exam_class_name" placeholder="Enter Exam/Class name">
+                                            <input type="text" class="form-control" id="exam_class_name" name="exam_class_name" placeholder="{{ __('Enter Exam/Class name') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Institute Name') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="institute_name" name="institute_name" placeholder="Enter Institute Name">
+                                            <input type="text" class="form-control" id="institute_name" name="institute_name" placeholder="{{ __('Enter Institute Name') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Result') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="result" name="result" placeholder="Enter Result">
+                                            <input type="text" class="form-control" id="result" name="result" placeholder="{{ __('Enter Result') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Passing Year') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="pass_year" name="pass_year" placeholder="Enter Passing Year">
+                                            <input type="text" class="form-control" id="pass_year" name="pass_year" placeholder="{{ __('Enter Passing Year') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Board') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="board" name="board" placeholder="Enter Board Name">
+                                            <input type="text" class="form-control" id="board" name="board" placeholder="{{ __('Enter Board Name') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Document No') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="document_no" name="document_no" placeholder="Enter Document No">
+                                            <input type="text" class="form-control" id="document_no" name="document_no" placeholder="{{ __('Enter Document No') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Addmission Class') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="addmission_class" name="addmission_class" placeholder="Enter Addmission Class">
+                                            <input type="text" class="form-control" id="addmission_class" name="addmission_class" placeholder="{{ __('Enter Addmission Class') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
@@ -390,7 +417,7 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Addmission No') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="addmission_no" id="addmission_no" placeholder="Addmission No">
+                                            <input type="text" class="form-control" name="addmission_no" id="addmission_no" placeholder="{{ __('Addmission No') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
@@ -415,6 +442,7 @@
                                             <span class="messages"></span>
                                         </div>
                                     </div>
+
                                     <div class="form-group row">
                                         <label class="col-sm-2"></label>
                                         <div class="col-sm-10">

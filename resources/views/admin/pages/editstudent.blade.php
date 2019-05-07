@@ -51,12 +51,12 @@
                                                 <div class="col-sm-10">
                                                     <div class="form-check form-check-inline">
                                                         <label class="form-check-label">
-                                                        <input class="form-check-input" type="radio" name="residensial" id="residensial-1" value="{{ $student->residensial }}"> {{ __('Residensial') }}
+                                                        <input class="form-check-input" type="radio" name="residensial" id="residensial-1" value="1"{{ $student->residensial == 1? "checked":"" }}> {{ __('Residensial') }}
                                                         </label>
                                                     </div>
                                                     <div class="form-check form-check-inline">
                                                         <label class="form-check-label">
-                                                        <input class="form-check-input" type="radio" name="residensial" id="residensial-2" value="{{ $student->residensial }}"> {{ __('Non-Residensial') }}
+                                                        <input class="form-check-input" type="radio" name="residensial" id="residensial-2" value="0"{{ $student->residensial == 0? "checked":"" }}> {{ __('Non-Residensial') }}
                                                         </label>
                                                     </div>
                                                     <span class="messages"></span>
@@ -318,6 +318,12 @@
                                             <div class="col-sm-10">
                                             <input type="text" class="form-control" id="phone" name="phone" value="{{ $student->phone }}">
                                             <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2"></label>
+                                            <div class="col-sm-10">
+                                                <button type="submit" class="btn btn-primary m-b-0">{{ __('Update') }}</button>
                                             </div>
                                         </div>
 

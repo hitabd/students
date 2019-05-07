@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\preMadrasha;
 use App\Official;
 use App\Student;
+use App\Upazila;
+use App\District;
 
 class StudentController extends Controller
 {
@@ -24,6 +26,7 @@ class StudentController extends Controller
     public function index()
     {
         $students = Student::all();
+
         return view('admin.pages.index', compact('students'));
     }
 
@@ -34,7 +37,9 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.addstudent');
+        $thanas = Upazila::all();
+        $districts = District::all();
+        return view('admin.pages.addstudent', compact('thanas', 'districts'));
     }
 
     /**
@@ -50,14 +55,14 @@ class StudentController extends Controller
 
         $student->residensial = $request->residensial;
         $student->name_bn = $request->name_bn;
-        $student->name_en = $request->name_en;
+        $student->name_en = strtoupper($request->name_en);
         $student->f_name_bn = $request->f_name_bn;
-        $student->f_name_en = $request->f_name_en;
+        $student->f_name_en = strtoupper($request->f_name_en);
         $student->f_occupation = $request->f_occupation;
         $student->f_income = $request->f_income;
         $student->f_phone = $request->f_phone;
         $student->m_name_bn = $request->m_name_bn;
-        $student->m_name_en = $request->m_name_en;
+        $student->m_name_en = strtoupper($request->m_name_en);
         $student->m_occupation = $request->m_occupation;
         $student->m_income = $request->m_income;
         $student->m_phone = $request->m_phone;
@@ -138,10 +143,13 @@ class StudentController extends Controller
      */
     public function edit(Student $student)
     {
+        // dd($student);
         return view('admin.pages.editstudent', compact('student'));
     }
+
+
     public function academic($id){
-         $student = Student::find($id);
+        $student = Student::find($id);
         $premadrasha = preMadrasha::where('student_id',$id)->first();
         $official =  Official::where('student_id',$id)->first();
         // dd($premadrasha, $official);
@@ -160,14 +168,14 @@ class StudentController extends Controller
 
         $student->residensial = $request->residensial;
         $student->name_bn = $request->name_bn;
-        $student->name_en = $request->name_en;
+        $student->name_en = strtoupper($request->name_en);
         $student->f_name_bn = $request->f_name_bn;
-        $student->f_name_en = $request->f_name_en;
+        $student->f_name_en = strtoupper($request->f_name_en);
         $student->f_occupation = $request->f_occupation;
         $student->f_income = $request->f_income;
         $student->f_phone = $request->f_phone;
         $student->m_name_bn = $request->m_name_bn;
-        $student->m_name_en = $request->m_name_en;
+        $student->m_name_en = strtoupper($request->m_name_en);
         $student->m_occupation = $request->m_occupation;
         $student->m_income = $request->m_income;
         $student->m_phone = $request->m_phone;
@@ -202,8 +210,8 @@ class StudentController extends Controller
             $size = $image->getClientSize();
             $destinationPath = public_path('/storage/student/images');
             $image->move($destinationPath, $name);
+            $student->image = $name;
         }
-        $student->image = $name;
         $student->save();
 
         Session::flash('message', 'Student Recorded Successfully!!');

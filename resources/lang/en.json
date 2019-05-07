@@ -5,6 +5,7 @@
     "Delete Student Information":"Delete Student Information",
     "Update Student":"Update Student",
     "Submit":"Submit",
+    "Update":"Update",
     "Addmitted To Class":"Addmitted To Class",
     "Date":"Date",
     "Addmission No":"Addmission No",
@@ -110,6 +111,8 @@
     "Enter Permanant Thana":"Enter Permanant Thana",
     "Enter Permanant Post Office":"Enter Permanant Post Office",
     "Enter Permanant House No":"Enter Permanant House No",
-    "Enter Permanant Village Name":"Enter Permanant Village Name"
+    "Enter Permanant Village Name":"Enter Permanant Village Name",
+    "Select District":"Select District",
+    "Select Thana":"Select Thana"
 
 }
