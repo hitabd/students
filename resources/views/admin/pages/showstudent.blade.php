@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-6">
             <div class="float-right" style="padding:5px;">
                 <form action="{{ route('student.destroy', $student->id) }}"
                     onclick="return confirm('{{ __('Are you sure you want to delete this Student Information?') }}');"
@@ -40,7 +40,7 @@
             <div class="float-right" style="padding:5px;">
                 <a href="{{ route('student.edit', $student->id) }}"
                     class="btn btn-sm btn-primary bg-c-blue waves-effect waves-light">
-                    <i class="feather icon-edit">{{ __('Edit student') }}</i>
+                    <i class="feather icon-edit">{{ __('Edit Student') }}</i>
                 </a>
             </div>
             <div class="float-right" style="padding:5px;">
@@ -50,7 +50,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-4 right">
+        <div class="col-lg-2 right">
             <img src="{{ URL::to('storage/student/images/'.$student->image) }}" alt="{{ $student->image }}" height="100"
                 width="100">
         </div>
@@ -68,8 +68,7 @@
                             <div class="col-sm-12 col-xl-6 m-b-30">
                                 <div class="form-group row">
                                     <span class="badge badge-primary"
-                                        style="height:2 rem; font-size:20px; text-align:center;">Student
-                                        Information</span>
+                                        style="height:2 rem; font-size:20px; text-align:center;">{{ __('Student Information') }}</span>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label"><b>{{ __('Student Name') }}</b></label>
@@ -84,42 +83,41 @@
                                 </div>
                                 <div class="form-group row">
                                     <label
-                                        class="col-sm-3 col-form-label"><b>{{ __('Students Date of Birth ') }}</b></label>
+                                        class="col-sm-3 col-form-label"><b>{{ __('Students Date of Birth') }}</b></label>
                                     <label class="col-sm-1 col-form-label">:</label>
-                                    <label class="col-sm-4 col-form-label">{{ $student->dob }}</ladobbel>
+                                    <label class="col-sm-4 col-form-label">{{ $student->dob }}</label>
                                 </div>
                                 <div class="form-group row">
                                     <label
-                                        class="col-sm-3 col-form-label"><b>{{ __('Students Blood Group ') }}</b></label>
+                                        class="col-sm-3 col-form-label"><b>{{ __('Students Blood Group') }}</b></label>
                                     <label class="col-sm-1 col-form-label">:</label>
-                                    <label class="col-sm-4 col-form-label">{{ $student->b_group }}</ladobbel>
+                                    <label class="col-sm-4 col-form-label">{{ $student->b_group }}</label>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label"><b>{{ __('Students Height ') }}</b></label>
+                                    <label class="col-sm-3 col-form-label"><b>{{ __('Students Height') }}</b></label>
                                     <label class="col-sm-1 col-form-label">:</label>
-                                    <label class="col-sm-4 col-form-label">{{ $student->height }}</ladobbel>
+                                    <label class="col-sm-4 col-form-label">{{ $student->height }}</label>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label"><b>{{ __('Students Weight ') }}</b></label>
+                                    <label class="col-sm-3 col-form-label"><b>{{ __('Students Weight') }}</b></label>
                                     <label class="col-sm-1 col-form-label">:</label>
-                                    <label class="col-sm-4 col-form-label">{{ $student->weight }}</ladobbel>
-                                </div>
-                                <div class="form-group row">
-                                    <label
-                                        class="col-sm-3 col-form-label"><b>{{ __('Students Skin Color ') }}</b></label>
-                                    <label class="col-sm-1 col-form-label">:</label>
-                                    <label class="col-sm-4 col-form-label">{{ $student->skin_color }}</ladobbel>
+                                    <label class="col-sm-4 col-form-label">{{ $student->weight }}</label>
                                 </div>
                                 <div class="form-group row">
                                     <label
-                                        class="col-sm-3 col-form-label"><b>{{ __('Students Birth Sign ') }}</b></label>
+                                        class="col-sm-3 col-form-label"><b>{{ __('Students Skin Color') }}</b></label>
                                     <label class="col-sm-1 col-form-label">:</label>
-                                    <label class="col-sm-4 col-form-label">{{ $student->b_sign }}</ladobbel>
+                                    <label class="col-sm-4 col-form-label">{{ $student->skin_color }}</label>
+                                </div>
+                                <div class="form-group row">
+                                    <label
+                                        class="col-sm-3 col-form-label"><b>{{ __('Students Birth Sign') }}</b></label>
+                                    <label class="col-sm-1 col-form-label">:</label>
+                                    <label class="col-sm-4 col-form-label">{{ $student->b_sign }}</label>
                                 </div>
                                 <div class="form-group row">
                                     <span class="badge badge-primary"
-                                        style="height:2 rem; font-size:20px; text-align:center;">Father
-                                        Information</span>
+                                        style="height:2 rem; font-size:20px; text-align:center;">{{ __('Father Information') }}</span>
                                 </div>
                                 <div class="form-group row">
                                     <label
@@ -152,8 +150,7 @@
                             <div class="col-sm-12 col-xl-6 m-b-30">
                                 <div class="form-group row">
                                     <span class="badge badge-primary"
-                                        style="height:2 rem; font-size:20px; text-align:center;">Mother
-                                        Information</span>
+                                        style="height:2 rem; font-size:20px; text-align:center;">{{ __('Mother Information') }}</span>
                                 </div>
                                 <div class="form-group row">
                                     <label
@@ -184,7 +181,7 @@
                                 </div>
                                 <div class="form-group row">
                                     <span class="badge badge-primary"
-                                        style="height:2 rem; font-size:20px; text-align:center;">Present Address
+                                        style="height:2 rem; font-size:20px; text-align:center;">{{ __('Present Address') }}
                                     </span>
                                 </div>
                                 <div class="form-group row">
@@ -214,7 +211,7 @@
                                 </div>
                                 <div class="form-group row">
                                     <span class="badge badge-primary"
-                                        style="height:2 rem; font-size:20px; text-align:center;">Permanent Address
+                                        style="height:2 rem; font-size:20px; text-align:center;">{{ __('Permanent Address') }}
                                     </span>
                                 </div>
                                 <div class="form-group row">
@@ -244,7 +241,7 @@
                                 </div>
                                 <div class="form-group row">
                                     <span class="badge badge-primary"
-                                        style="height:2 rem; font-size:20px; text-align:center;">Gurdian Information
+                                        style="height:2 rem; font-size:20px; text-align:center;">{{ __('Gurdian Information') }}
                                     </span>
                                 </div>
                                 <div class="form-group row">

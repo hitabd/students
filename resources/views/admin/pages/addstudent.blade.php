@@ -47,12 +47,12 @@
                                         <div class="col-sm-10">
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
-                                                    <input class="form-check-input" type="radio" name="residensial" id="r1" value="1" > Residensial
+                                                    <input class="form-check-input" type="radio" name="residensial" id="r1" value="1" > {{ __('Residensial') }}
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
-                                                    <input class="form-check-input" type="radio" name="residensial" id="r2" value="0" > Non-Residensial
+                                                    <input class="form-check-input" type="radio" name="residensial" id="r2" value="0" > {{ __('Non-Residensial') }}
                                                 </label>
                                             </div>
                                             <span class="messages"></span>
@@ -69,63 +69,63 @@
                                     <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">{{ __('Student Name(Bengali)') }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="name_bn" id="name_bn" placeholder="Enter Student Name">
+                                                <input type="text" class="form-control" name="name_bn" id="name_bn" placeholder="{{ __('Enter Student Name') }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">{{ __('Student Name(Block)') }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="name_en" id="name_en" placeholder="English Block Letter">
+                                                <input type="text" class="form-control" name="name_en" id="name_en" placeholder="{{ __('English Block Letter') }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("Father's Name(Bengali)") }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="f_name_bn" id="f_name_bn" placeholder="Enter Father's Name">
+                                            <input type="text" class="form-control" name="f_name_bn" id="f_name_bn" placeholder="{{ __("Enter Father's Name") }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("Father's Name(Block)") }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="f_name_en" id="f_name_en" placeholder="English Block Letter">
+                                            <input type="text" class="form-control" name="f_name_en" id="f_name_en" placeholder="{{ __('English Block Letter') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">{{ __("Father's Occupation") }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="f_occupation" name="f_occupation" placeholder=" Enter Father's Occupation">
+                                                <input type="text" class="form-control" id="f_occupation" name="f_occupation" placeholder=" {{ __("Enter Father's Occupation") }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">{{ __("Father's Income") }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="f_income" name="f_income" placeholder="Enter Father's Income">
+                                                <input type="text" class="form-control" id="f_income" name="f_income" placeholder="{{ __("Enter Father's Income") }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">{{ __("Father's Phone No") }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="f_phone" name="f_phone" placeholder="Enter Father's Phone No">
+                                                <input type="text" class="form-control" id="f_phone" name="f_phone" placeholder="{{ __("Enter Father's Phone No") }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("Mother's Name(Bengali)") }}</label>
                                         <div class="col-sm-10">
-                                        <input type="text" class="form-control" name="m_name_bn" id="m_name_bn" placeholder="Enter Mother's Name">
+                                        <input type="text" class="form-control" name="m_name_bn" id="m_name_bn" placeholder="{{ __("Enter Mother's Name") }}">
                                         <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("Mother's Name(Block)") }}</label>
                                         <div class="col-sm-10">
-                                        <input type="text" class="form-control" name="m_name_en" id="m_name_en" placeholder="English Block Letter">
+                                        <input type="text" class="form-control" name="m_name_en" id="m_name_en" placeholder="{{ __('English Block Letter') }}">
                                         <span class="messages"></span>
                                         </div>
                                     </div>
@@ -133,99 +133,103 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("Mother's Occupation") }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="m_occupation" name="m_occupation" placeholder="Enter Mother's Occupation">
+                                            <input type="text" class="form-control" id="m_occupation" name="m_occupation" placeholder="{{ __("Enter Mother's Occupation") }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("Mother's Income") }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="m_income" name="m_income" placeholder="Enter Mother's Income">
+                                            <input type="text" class="form-control" id="m_income" name="m_income" placeholder="{{ __("Enter Mother's Income") }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("Mother's Phone No") }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="m_phone" name="m_phone" placeholder="Enter Mother's Phone No">
+                                            <input type="text" class="form-control" id="m_phone" name="m_phone" placeholder="{{ __("Enter Mother's Phone No") }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="card-header">
-                                            <h5>{{ __("PresentAddress") }}</h5>
+                                            <h5>{{ __("Present Address") }}</h5>
                                         </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("Village") }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="p_village" name="p_village" placeholder="Enter Present Village Name">
+                                            <input type="text" class="form-control" id="p_village" name="p_village" placeholder="{{ __('Enter Present Village Name') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __("House No") }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="p_house" name="p_house" placeholder="Enter Present HouseNo">
+                                            <input type="text" class="form-control" id="p_house" name="p_house" placeholder="{{ __('Enter Present House No') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Post Office') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="p_post" name="p_post" placeholder="Enter Present Post Office">
+                                            <input type="text" class="form-control" id="p_post" name="p_post" placeholder="{{ __('Enter Present Post Office') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="p_thana" name="p_thana" placeholder="Enter Present Thana">
+                                            <input type="text" class="form-control" id="p_thana" name="p_thana" placeholder="{{ __('Enter Present Thana') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="p_district" name="p_district" placeholder="Enter Present District">
+                                            <input type="text" class="form-control" id="p_district" name="p_district" placeholder="{{ __('Enter Present District') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="card-header">
-                                            <h5>{{ __('PermanantAddress') }}</h5>
+                                            <h5>{{ __('Permanant Address') }}</h5>
                                         </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Village') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="per_village" name="per_village" placeholder="Enter Permanant Village Name">
+                                            <input type="text" class="form-control" id="per_village" name="per_village" placeholder="{{ __('Enter Permanant Village Name') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('House No') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="per_house" name="per_house" placeholder="Enter Permanant House No">
+                                            <input type="text" class="form-control" id="per_house" name="per_house" placeholder="{{ __('Enter Permanant House No') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Post Office') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="per_post" name="per_post" placeholder="Enter Permanant Post Office">
+                                            <input type="text" class="form-control" id="per_post" name="per_post" placeholder="{{ __('Enter Permanant Post Office') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="per_thana" name="per_thana" placeholder="Enter Permanant Thana">
+                                            <input type="text" class="form-control" id="per_thana" name="per_thana" placeholder="{{ __('Enter Permanant Thana') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="per_district" name="per_district" placeholder="Enter Permanant District">
+                                            <input type="text" class="form-control" id="per_district" name="per_district" placeholder="{{ __('Enter Permanant District') }}">
                                             <span class="messages"></span>
                                         </div>
+                                    </div>
+
+                                    <div class="card-header">
+                                            <h5>{{ __('Student Identification') }}</h5>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Date of Birth') }}</label>
@@ -234,9 +238,6 @@
                                             <span class="messages"></span>
                                         </div>
                                     </div>
-                                    <div class="card-header">
-                                            <h5>{{ __('StudentIdentification') }}</h5>
-                                        </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Blood Group') }}</label>
                                         <div class="col-sm-10">
@@ -273,7 +274,7 @@
                                         </div>
                                     </div>
                                     <div class="card-header">
-                                            <h5>{{ __('AbsenseofFather') }}</h5>
+                                            <h5>{{ __('Absense of Father') }}</h5>
                                         </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('legal Guardian Name') }}</label>
@@ -332,7 +333,7 @@
                                         </div>
                                     </div>
                                     <div class="card-header">
-                                        <h5>{{ __('PreviousAcademicRecord') }}</h5>
+                                        <h5>{{ __('Previous Academic Record') }}</h5>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Exam/Class name') }}</label>
@@ -384,16 +385,12 @@
                                         </div>
                                     </div>
                                     <div class="card-header">
-                                        <h5>{{ __('OfficialUseOnly') }}</h5>
+                                        <h5>{{ __('Official Use Only') }}</h5>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Addmission No') }}</label>
                                         <div class="col-sm-10">
-<<<<<<< HEAD
-                                            <input type="text" class="form-control" name="addmission_no" id="addission_no" placeholder=" Enter Addmission No">
-=======
                                             <input type="text" class="form-control" name="addmission_no" id="addmission_no" placeholder="Addmission No">
->>>>>>> 51ed26478d10a21f957f55a4e7595664d566e846
                                             <span class="messages"></span>
                                         </div>
                                     </div>

@@ -15,17 +15,10 @@
 								<a href="#"><span class="feather icon-home"></span></a>
 							</li>
 							<li class="breadcrumb-item">
-<<<<<<< HEAD
-								<a href="">{{ __('Student') }}</a>
-							</li>
-							<li class="breadcrumb-item">
-								<a href="">{{ __('Student Information') }}</a>
-=======
 								<a href="#">{{ __('Student') }}</a>
 							</li>
 							<li class="breadcrumb-item">
 								<a href="#">{{ __('Student Information') }}</a>
->>>>>>> 51ed26478d10a21f957f55a4e7595664d566e846
 							</li>
 						</ul>
 					</div>

@@ -8,7 +8,7 @@
             <div class="page-header-title">
                 <i class="feather icon-clipboard bg-c-blue"></i>
                 <div class="d-inline">
-                    <h5>Students Inputs</h5>
+                    <h5>{{ __('Edit Students') }}</h5>
                 <span></span>
                 </div>
             </div>
@@ -20,10 +20,10 @@
                         <a href="index.html"><i class="feather icon-home"></i></a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="#!">Form Components</a>
+                        <a href="#!">{{ __('Student') }}</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="#!">Forms Validation</a>
+                        <a href="#!">{{ __('Edit Student') }}</a>
                     </li>
                 </ul>
             </div>
@@ -40,290 +40,287 @@
 
                             <div class="card">
                                     <div class="card-header">
-                                            <h5>Update StudentInformation</h5>
+                                            <h5>{{ __('Update Student Information') }}</h5>
                                         </div>
                             <div class="card-block">
-                                    <form id="main" method="post" action="{{ route('student.update', $students->id) }}" novalidate>
+                                    <form id="main" method="post" action="{{ route('student.update', $student->id) }}" novalidate>
                                         @csrf
                                         @method('PUT')
-                                        <div class="card-header">
-                                            <h5>Student Information</h5>
-                                        </div>
                                         <div class="row">
-                                            <label class="col-sm-2 col-form-label">Radio Buttons</label>
+                                            <label class="col-sm-2 col-form-label">{{ __('Student Type') }}</label>
                                                 <div class="col-sm-10">
                                                     <div class="form-check form-check-inline">
                                                         <label class="form-check-label">
-                                                        <input class="form-check-input" type="radio" name="residensial" id="residensial-1" value="{{ $edits->residensial }}"> Residensial
+                                                        <input class="form-check-input" type="radio" name="residensial" id="residensial-1" value="{{ $student->residensial }}"> {{ __('Residensial') }}
                                                         </label>
                                                     </div>
                                                     <div class="form-check form-check-inline">
                                                         <label class="form-check-label">
-                                                        <input class="form-check-input" type="radio" name="residensial" id="residensial-2" value="{{ $edits->residensial }}"> Non-Residensial
+                                                        <input class="form-check-input" type="radio" name="residensial" id="residensial-2" value="{{ $student->residensial }}"> {{ __('Non-Residensial') }}
                                                         </label>
                                                     </div>
                                                     <span class="messages"></span>
                                                 </div>
                                         </div>
                                         <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Image</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('Image') }}</label>
                                                 <div class="col-sm-10">
                                                 <input type="file" class="form-control" multiple / name="image" id="image" >
                                                 <span class="messages"></span>
                                                 </div>
                                         </div>
                                         <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Student Name (Bengali)</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('Student Name(Bengali)') }}</label>
                                                 <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="name_bn" id="name_bn" value="{{ $edits->name_bn }}">
+                                                <input type="text" class="form-control" name="name_bn" id="name_bn" value="{{ $student->name_bn }}">
                                                 <span class="messages"></span>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Student Name (Block)</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('Student Name(Block)') }}</label>
                                                 <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="name_en" id="name_en" value="{{ $edits->name_en }}">
+                                                <input type="text" class="form-control" name="name_en" id="name_en" value="{{ $student->name_en }}">
                                                 <span class="messages"></span>
                                                 </div>
                                             </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Father's Name (Bengali)</label>
+                                            <label class="col-sm-2 col-form-label">{{ __("Father's Name(Bengali)") }}</label>
                                             <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="f_name_bn" id="f_name_bn" value="{{ $edits->f_name_bn }}">
+                                            <input type="text" class="form-control" name="f_name_bn" id="f_name_bn" value="{{ $student->f_name_bn }}">
                                             <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Father's Name (Block)</label>
+                                            <label class="col-sm-2 col-form-label">{{ __("Father's Name(Block)") }}</label>
                                             <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="f_name_en" id="f_name_en" value="{{ $edits->f_name_en }}">
+                                            <input type="text" class="form-control" name="f_name_en" id="f_name_en" value="{{ $student->f_name_en }}">
                                             <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Father's Occupation</label>
+                                                <label class="col-sm-2 col-form-label">{{ __("Father's Occupation") }}</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" id="f_occupation" name="f_occupation" value="{{ $edits->f_occupation }}">
+                                                    <input type="text" class="form-control" id="f_occupation" name="f_occupation" value="{{ $student->f_occupation }}">
                                                     <span class="messages"></span>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Father's Income</label>
+                                                <label class="col-sm-2 col-form-label">{{ __("Father's Income") }}</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" id="f_income" name="f_income" value="{{ $edits->f_income }}">
+                                                    <input type="text" class="form-control" id="f_income" name="f_income" value="{{ $student->f_income }}">
                                                     <span class="messages"></span>
                                                 </div>
                                             </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Mother's Name (Bengali)</label>
+                                            <label class="col-sm-2 col-form-label">{{ __("Mother's Name(Bengali)") }}</label>
                                             <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="m_name_bn" id="m_name_bn" value="{{ $edits->m_name_bn }}">
+                                            <input type="text" class="form-control" name="m_name_bn" id="m_name_bn" value="{{ $student->m_name_bn }}">
                                             <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Mother's Name (Block)</label>
+                                            <label class="col-sm-2 col-form-label">{{ __("Mother's Name(Block)") }}</label>
                                             <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="m_name_en" id="m_name_en" value="{{ $edits->m_name_en }}"">
+                                            <input type="text" class="form-control" name="m_name_en" id="m_name_en" value="{{ $student->m_name_en }}"">
                                             <span class="messages"></span>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Mother's Occupation</label>
+                                            <label class="col-sm-2 col-form-label">{{ __("Mother's Occupation") }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="m_occupation" name="m_occupation" value="{{ $edits->m_occupation }}">
+                                                <input type="text" class="form-control" id="m_occupation" name="m_occupation" value="{{ $student->m_occupation }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Mother's Income</label>
+                                            <label class="col-sm-2 col-form-label">{{ __("Mother's Income") }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="m_income" name="m_income" value="{{ $edits->m_income }}">
-                                                <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="card-header">
-                                                <h5>Present Address</h5>
-                                            </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Village</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="p_village" name="p_village" value="{{ $edits->p_village }}">
-                                                <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">House No</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="p_house" name="p_house" value="{{ $edits->p_house }}">
-                                                <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Post Office</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="p_post" name="p_post" value="{{ $edits->p_post }}">
-                                                <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Thana</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="p_thana" name="p_thana" value="{{ $edits->p_thana }}">
-                                                <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">District</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="p_district" name="p_district" value="{{ $edits->p_district }}">
+                                                <input type="text" class="form-control" id="m_income" name="m_income" value="{{ $student->m_income }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="card-header">
-                                                <h5>Permanant Address</h5>
+                                                <h5>{{ __('Present Address') }}</h5>
                                             </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Village</label>
+                                            <label class="col-sm-2 col-form-label">{{ __('Village') }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="per_village" name="per_village" value="{{ $edits->per_village }}">
+                                                <input type="text" class="form-control" id="p_village" name="p_village" value="{{ $student->p_village }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">House No</label>
+                                            <label class="col-sm-2 col-form-label">{{ __('House No') }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="per_house" name="per_house" value="{{ $edits->per_house }}">
+                                                <input type="text" class="form-control" id="p_house" name="p_house" value="{{ $student->p_house }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Post Office</label>
+                                            <label class="col-sm-2 col-form-label">{{ __('Post Office') }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="per_post" name="per_post" value="{{ $edits->per_post}}">
+                                                <input type="text" class="form-control" id="p_post" name="p_post" value="{{ $student->p_post }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Thana</label>
+                                            <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="per_thana" name="per_thana" value="{{ $edits->per_thana }}">
+                                                <input type="text" class="form-control" id="p_thana" name="p_thana" value="{{ $student->p_thana }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">District</label>
+                                            <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="per_district" name="per_district" value="{{ $edits->per_district }}">
-                                                <span class="messages"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Date of Birth</label>
-                                            <div class="col-sm-10">
-                                                <input type="date" class="form-control" id="dob" name="dob" value="{{ $edits->dob }}">
+                                                <input type="text" class="form-control" id="p_district" name="p_district" value="{{ $student->p_district }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="card-header">
-                                                <h5>Student Identification</h5>
+                                                <h5>{{ __('Permanant Address') }}</h5>
                                             </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Blood Group</label>
+                                            <label class="col-sm-2 col-form-label">{{ __('Village') }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="b_group" name="b_group" value="{{ $edits->b_group }}">
+                                                <input type="text" class="form-control" id="per_village" name="per_village" value="{{ $student->per_village }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Height</label>
+                                            <label class="col-sm-2 col-form-label">{{ __('House No') }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="height" name="height" value="{{ $edits->height }}">
+                                                <input type="text" class="form-control" id="per_house" name="per_house" value="{{ $student->per_house }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Weight</label>
+                                            <label class="col-sm-2 col-form-label">{{ __('Post Office') }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="weight" name="weight" value="{{ $edits->weight }}">
+                                                <input type="text" class="form-control" id="per_post" name="per_post" value="{{ $student->per_post}}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Skin Color</label>
+                                            <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="skin_color" name="skin_color" value="{{ $edits->skin_color }}">
+                                                <input type="text" class="form-control" id="per_thana" name="per_thana" value="{{ $student->per_thana }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Birth Sign</label>
+                                            <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="b_sign" name="b_sign" value="{{ $edits->b_sign }}">
+                                                <input type="text" class="form-control" id="per_district" name="per_district" value="{{ $student->per_district }}">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">{{ __('Date of Birth') }}</label>
+                                            <div class="col-sm-10">
+                                                <input type="date" class="form-control" id="dob" name="dob" value="{{ $student->dob }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="card-header">
-                                                <h5>Absense of Father</h5>
+                                                <h5>{{ __('Student Identification') }}</h5>
                                             </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Legal Guardian Name</label>
+                                            <label class="col-sm-2 col-form-label">{{ __('Blood Group') }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="lg_name" name="lg_name" value="{{ $edits->lg_name }}">
+                                                <input type="text" class="form-control" id="b_group" name="b_group" value="{{ $student->b_group }}">
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Village</label>
+                                            <label class="col-sm-2 col-form-label">{{ __('Height') }}</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="height" name="height" value="{{ $student->height }}">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">{{ __('Weight') }}</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="weight" name="weight" value="{{ $student->weight }}">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">{{ __('Skin Color') }}</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="skin_color" name="skin_color" value="{{ $student->skin_color }}">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">{{ __('Birth Sign') }}</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="b_sign" name="b_sign" value="{{ $student->b_sign }}">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="card-header">
+                                                <h5>{{ __('Absense of Father') }}</h5>
+                                            </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">{{ __('Legal Guardian Name') }}</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="lg_name" name="lg_name" value="{{ $student->lg_name }}">
+                                                <span class="messages"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">{{ __('Village') }}</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" id="lg_village" name="lg_village" value="{{ $edits->lg_village }}">
+                                                    <input type="text" class="form-control" id="lg_village" name="lg_village" value="{{ $student->lg_village }}">
                                                     <span class="messages"></span>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">House No</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('House No') }}</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" id="lg_house" name="lg_house" value="{{ $edits->lg_house }}">
+                                                    <input type="text" class="form-control" id="lg_house" name="lg_house" value="{{ $student->lg_house }}">
                                                     <span class="messages"></span>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Post Office</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('Post Office') }}</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" id="lg_post" name="lg_post" value="{{ $edits->lg_post }}">
+                                                    <input type="text" class="form-control" id="lg_post" name="lg_post" value="{{ $student->lg_post }}">
                                                     <span class="messages"></span>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Thana</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" id="lg_thana" name="lg_thana" value="{{ $edits->lg_thana }}">
+                                                    <input type="text" class="form-control" id="lg_thana" name="lg_thana" value="{{ $student->lg_thana }}">
                                                     <span class="messages"></span>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">District</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" id="lg_district" name="lg_district" value="{{ $edits->lg_district }}">
+                                                    <input type="text" class="form-control" id="lg_district" name="lg_district" value="{{ $student->lg_district }}">
                                                     <span class="messages"></span>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Relationship With Guardian</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('Relationship With Guardian') }}</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" id="relationship" name="relationship" value="{{ $edits->relationship }}">
+                                                    <input type="text" class="form-control" id="relationship" name="relationship" value="{{ $student->relationship }}">
                                                     <span class="messages"></span>
                                                 </div>
                                             </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Phone</label>
+                                            <label class="col-sm-2 col-form-label">{{ __('Phone') }}</label>
                                             <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="phone" name="phone" value="{{ $edits->phone }}">
+                                            <input type="text" class="form-control" id="phone" name="phone" value="{{ $student->phone }}">
                                             <span class="messages"></span>
                                             </div>
                                         </div>
-                                        
+
                                     </form>
                             </div>
                             </div>
