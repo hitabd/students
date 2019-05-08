@@ -234,13 +234,8 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label"><b>{{ __("Mother's Phone NO") }}</b></label>
                                     <label class="col-sm-1 col-form-label">:</label>
-<<<<<<< Updated upstream
-                                    <label class="col-sm-4 col-form-label">{{ $student->m_phone }}</label>
-                                </div>
-=======
                                     <label class="col-sm-4 col-form-label"></label>
                                 </div> --}}
->>>>>>> Stashed changes
                                 <div class="form-group row">
                                     <span class="badge badge-primary"
                                         style="height:2 rem; font-size:20px; text-align:center;">{{ __('Present Address') }}
