@@ -53,6 +53,7 @@
     "Students Inputs":"ছাত্রের তথ্য গ্রহণ",
     "Are you sure you want to delete this student?":"আপনি কি ছাত্রটিকে বাতিল করতে চান?",
     "Delete Student":" ছাত্র ডিলিট",
+    "Delete":" ছাত্র ডিলিট",
     "Edit Student":"ছাত্রের সংশোধন",
     "Roll No":"ক্রমিক নং",
     "Name":"নাম",
@@ -137,7 +138,11 @@
     "Enter Addmitted To Class":"কোন ক্লাসে ভর্তি করা হয়েছে",
     "Enter Roll No":"রোল নং লিখুন",
     "Enter Relationship With Guardian":"অভিভাবকের সাথে সম্পর্ক লিখুন",
-    "Enter legal Guardian Name":"অভিভাবকের নাম লিখুন"
+    "Enter legal Guardian Name":"অভিভাবকের নাম লিখুন",
+    "Select Board Name":"বোর্ডের নাম সিলেক্ট করুন",
+    "Student Recorded Successfully!!":"ছাত্রের তথ্য সফলভাবে সংরক্ষিত করা হয়েছে!!",
+    "Student Updated Successfully!!":"ছাত্রের তথ্য সফলভাবে আপডেট করা হয়েছে!!",
+    "Student Information Deleted Successfully!!":"ছাত্রের তথ্য সফলভাবে বাতিল করা হয়েছে!!"
 
 
 

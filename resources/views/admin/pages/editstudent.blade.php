@@ -1,7 +1,11 @@
 @extends('layouts.admin')
 
 @section('content')
-
+@if (session('message'))
+    <div class="alert alert-success">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> {{ session('message') }}
+    </div>
+@endif
 <div class="page-header card">
     <div class="row align-items-end">
         <div class="col-lg-8">
@@ -165,18 +169,30 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="p_thana" name="p_thana" value="{{ $student->p_thana }}">
-                                                <span class="messages"></span>
-                                            </div>
+                                                <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
+                                                <div class="col-sm-10">
+                                                    <select class="form-control js-example-basic-single" id="p_thana" name="p_thana">
+                                                        <optgroup label="{{ __('District') }}">
+                                                            @foreach ($thanas as $thana)
+                                                            <option value="{{ $thana->id }}"
+                                                                {{ $thana->id == $student->per_thana ? "selected" : ""}}>{{ $thana->name }}</option>
+                                                            @endforeach
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="p_district" name="p_district" value="{{ $student->p_district }}">
-                                                <span class="messages"></span>
-                                            </div>
+                                                <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
+                                                <div class="col-sm-10">
+                                                    <select class="form-control js-example-basic-single" id="p_district" name="p_district">
+                                                        <optgroup label="{{ __('District') }}">
+                                                            @foreach ($districts as $district)
+                                                            <option value="{{ $district->id }}"
+                                                                {{ $district->id == $student->lg_district ? "selected" : ""}}>{{ $district->name }}</option>
+                                                            @endforeach
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
                                         </div>
                                         <div class="card-header">
                                                 <h5>{{ __('Permanant Address') }}</h5>
@@ -203,18 +219,34 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="per_thana" name="per_thana" value="{{ $student->per_thana }}">
-                                                <span class="messages"></span>
-                                            </div>
+                                                <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
+                                                <div class="col-sm-10">
+                                                    <select class="form-control js-example-basic-single" id="per_thana" name="per_thana">
+                                                        <optgroup label="{{ __('District') }}">
+                                                            @foreach ($thanas as $thana)
+                                                            <option value="{{ $thana->id }}"
+                                                                {{ $thana->id == $student->per_thana ? "selected" : ""}}>{{ $thana->name }}</option>
+                                                            @endforeach
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="per_district" name="per_district" value="{{ $student->per_district }}">
-                                                <span class="messages"></span>
+                                                <select class="form-control js-example-basic-single" id="per_district" name="per_district">
+                                                    <optgroup label="{{ __('District') }}">
+                                                        @foreach ($districts as $district)
+                                                        <option value="{{ $district->id }}"
+                                                            {{ $district->id == $student->lg_district ? "selected" : ""}}>{{ $district->name }}</option>
+                                                        @endforeach
+                                                    </optgroup>
+                                                </select>
                                             </div>
+                                        </div>
+
+                                        <div class="card-header">
+                                            <h5>{{ __('Student Identification') }}</h5>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">{{ __('Date of Birth') }}</label>
@@ -223,15 +255,24 @@
                                                 <span class="messages"></span>
                                             </div>
                                         </div>
-                                        <div class="card-header">
-                                                <h5>{{ __('Student Identification') }}</h5>
-                                            </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">{{ __('Blood Group') }}</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="b_group" name="b_group" value="{{ $student->b_group }}">
+                                                <label class="col-sm-2 col-form-label">{{ __('Blood Group') }}</label>
+                                                <div class="col-sm-10">
+                                                    <select class="form-control js-example-basic-single" id="b_group" name="b_group">
+                                                        <optgroup label="{{ __('Blood Group') }}">
+                                                                <option value="{{ $student->id }}"{{ $student->id == $student->b_group ? "selected" : "" }}>{{ $student->b_group }}</option>
+                                                                <option value="A+">A+</option>
+                                                                <option value="A-">A-</option>
+                                                                <option value="B+">B+</option>
+                                                                <option value="B-">B-</option>
+                                                                <option value="O+">O+</option>
+                                                                <option value="O-">O-</option>
+                                                                <option value="AB+">AB+</option>
+                                                                <option value="AB-">AB-</option>
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
                                                 <span class="messages"></span>
-                                            </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">{{ __('Height') }}</label>
@@ -293,17 +334,29 @@
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control" id="lg_thana" name="lg_thana" value="{{ $student->lg_thana }}">
-                                                    <span class="messages"></span>
-                                                </div>
+                                                    <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
+                                                    <div class="col-sm-10">
+                                                        <select class="form-control js-example-basic-single" id="lg_thana" name="lg_thana">
+                                                            <optgroup label="{{ __('District') }}">
+                                                                @foreach ($thanas as $thana)
+                                                                <option value="{{ $thana->id }}"
+                                                                    {{ $thana->id == $student->lg_thana ? "selected" : ""}}>{{ $thana->name }}</option>
+                                                                @endforeach
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" id="lg_district" name="lg_district" value="{{ $student->lg_district }}">
-                                                    <span class="messages"></span>
+                                                    <select class="form-control js-example-basic-single" id="lg_district" name="lg_district">
+                                                        <optgroup label="{{ __('District') }}">
+                                                            @foreach ($districts as $district)
+                                                            <option value="{{ $district->id }}"
+                                                                {{ $district->id == $student->lg_district ? "selected" : ""}}>{{ $district->name }}</option>
+                                                            @endforeach
+                                                        </optgroup>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="form-group row">

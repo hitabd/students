@@ -119,7 +119,13 @@
     "Enter Weight":"Enter Weight",
     "Enter Skin Color":"Enter Skin Color",
     "Enter Birth Sign":"Enter Birth Sign",
-    "Enter legal Guardian Name":"Enter legal Guardian Name"
+    "Enter legal Guardian Name":"Enter legal Guardian Name",
+    "Select Board Name":"Select Board Name",
+    "Student Recorded Successfully":"Student Recorded Successfull",
+    "Student Updated Successfully":"Student Updated Successfully",
+    "Student Information Deleted Successfully!!":"Student Information Deleted Successfully!!"
+
+
 
 
 }

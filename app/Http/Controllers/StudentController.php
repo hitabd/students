@@ -52,20 +52,21 @@ class StudentController extends Controller
     public function store(Request $request)
     {
 
-        $student = $request->validate([
-            'residenttial' => 'required',
+        // dd($request);
+        $this->validate($request,[
+            'residensial' => 'required',
             'name_bn' => 'required|max:25',
-            'name_en' => 'required|min:25',
+            'name_en' => 'required|max:25',
             'f_name_bn'=> 'required|max:25',
             'f_name_en'=>'required|max:25',
             'f_occupation'=>'required|max:25',
             'f_income'=>'required|integer',
-            'f_phone'=>'required|digits_between:0,11',
+            'f_phone'=>'required|digits_between:9,15',
             'm_name_bn'=>'required|max:25',
             'm_name_en'=>'required|max:25',
             'm_occupation'=>'required|max:20',
             'm_income'=>'required|integer',
-            'm_phone'=>'required|digits_between:0,11',
+            'm_phone'=>'required|digits_between:9,15',
             'p_village'=>'required',
             'p_house'=>'required',
             'p_post'=>'required',
@@ -133,6 +134,7 @@ class StudentController extends Controller
         $student->relationship = $request->relationship;
         $student->phone = $request->phone;
 
+
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $name = $request->name_en . '_img.' . $image->getClientOriginalExtension();
@@ -162,7 +164,7 @@ class StudentController extends Controller
         $madrasha ->student_id = $student->id;
         $madrasha ->save();
 
-        Session::flash('message', 'Student Recorded Successfully!!');
+        Session::flash('message', __('Student Recorded Successfully!!'));
         return redirect()->route('student.index');
     }
 
@@ -186,7 +188,9 @@ class StudentController extends Controller
     public function edit(Student $student)
     {
         // dd($student);
-        return view('admin.pages.editstudent', compact('student'));
+        $thanas = Upazila::all();
+        $districts = District::all();
+        return view('admin.pages.editstudent', compact('student', 'districts', 'thanas'));
     }
 
 
@@ -256,7 +260,7 @@ class StudentController extends Controller
         }
         $student->save();
 
-        Session::flash('message', 'Student Recorded Successfully!!');
+        Session::flash('message', __('Student Updated Successfully!!'));
         return redirect()->route('student.index');
     }
 
@@ -279,10 +283,10 @@ class StudentController extends Controller
             'title' => 'First PDF for Medium',
             'name' => "Salman",
             ];
-          
-          $pdf = PDF::loadView('admin.myPDF', $data); 
-           
+
+          $pdf = PDF::loadView('admin.myPDF', $data);
+
           return $pdf->stream('medium.pdf');
-    
+
     }
 }

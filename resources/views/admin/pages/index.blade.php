@@ -1,6 +1,11 @@
 @extends('layouts.admin')
 
 @section('content')
+@if (session('message'))
+    <div class="alert alert-success">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> {{ session('message') }}
+    </div>
+@endif
 
 <div class="page-header card">
 	<div class="row align-items-center">

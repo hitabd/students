@@ -387,6 +387,8 @@ class ComposerStaticInit82b7e6c8142a3dca33daabb0c880365f
 
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\District' => __DIR__ . '/../..' . '/app/District.php',
+        'App\\Division' => __DIR__ . '/../..' . '/app/Division.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
@@ -415,6 +417,7 @@ class ComposerStaticInit82b7e6c8142a3dca33daabb0c880365f
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Student' => __DIR__ . '/../..' . '/app/Student.php',
+        'App\\Upazila' => __DIR__ . '/../..' . '/app/Upazila.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'App\\preMadrasha' => __DIR__ . '/../..' . '/app/preMadrasha.php',
         'Barryvdh\\DomPDF\\Facade' => __DIR__ . '/..' . '/barryvdh/laravel-dompdf/src/Facade.php',

@@ -333,7 +333,7 @@
                                     <label class="col-sm-1 col-form-label">:</label>
                                     <?php
                                         $lg_thana = DB::table('upazilas')->where('upazilas.id',$student->lg_thana)->select('name')->first();
-                                    ?>
+                                        ?>
                                     <label class="col-sm-4 col-form-label">{{ $lg_thana->name }}</label>
                                 </div>
                                 <div class="form-group row">
