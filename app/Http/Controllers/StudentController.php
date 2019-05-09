@@ -284,7 +284,7 @@ class StudentController extends Controller
             'name' => "Salman",
             ];
 
-          $pdf = PDF::loadView('admin.myPDF', $data);
+          $pdf = PDF::loadView('demoPDF', $data);
 
           return $pdf->stream('medium.pdf');
 
