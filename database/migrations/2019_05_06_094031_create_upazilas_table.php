@@ -20,7 +20,7 @@ class CreateUpazilasTable extends Migration
             $table->string('bn_name');
             $table->timestamps();
 
-            $table->foreign('district_id')->references('id')->on('districts');
+            $table->foreign('district_id')->references('id')->on('districts')->onUpdate('cascade');
         });
     }
 

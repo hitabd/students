@@ -9,7 +9,8 @@ use App\Official;
 use App\Student;
 use App\Upazila;
 use App\District;
-Use PDF;
+use PDF;
+use App\StudentClass;
 
 class StudentController extends Controller
 {
@@ -40,7 +41,8 @@ class StudentController extends Controller
     {
         $thanas = Upazila::all();
         $districts = District::all();
-        return view('admin.pages.addstudent', compact('thanas', 'districts'));
+        $classes = StudentClass::all();
+        return view('admin.pages.addstudent', compact('thanas', 'districts', 'classes'));
     }
 
     /**
@@ -53,44 +55,44 @@ class StudentController extends Controller
     {
 
         // dd($request);
-        $this->validate($request,[
+        $this->validate($request, [
             'residensial' => 'required',
             'name_bn' => 'required|max:25',
             'name_en' => 'required|max:25',
-            'f_name_bn'=> 'required|max:25',
-            'f_name_en'=>'required|max:25',
-            'f_occupation'=>'required|max:25',
-            'f_income'=>'required|integer',
-            'f_phone'=>'required|digits_between:9,15',
-            'm_name_bn'=>'required|max:25',
-            'm_name_en'=>'required|max:25',
-            'm_occupation'=>'required|max:20',
-            'm_income'=>'required|integer',
-            'm_phone'=>'required|digits_between:9,15',
-            'p_village'=>'required',
-            'p_house'=>'required',
-            'p_post'=>'required',
-            'p_thana'=>'required',
-            'p_district'=>'required',
-            'per_village'=>'required',
-            'per_house'=>'required',
-            'per_post'=>'required',
-            'per_thana'=>'required',
-            'per_district'=>'required',
-            'dob'=>'required',
-            'b_group'=>'required',
-            'height'=>'required',
-            'weight'=>'required',
-            'skin_color'=>'',
-            'b_sign'=>'',
-            'lg_name'=>'required',
-            'lg_village'=>'required',
-            'lg_house'=>'required',
-            'lg_post'=>'required',
-            'lg_thana'=>'required',
-            'lg_district'=>'required',
-            'relationship'=>'required',
-            'phone'=>'required|digits_between:9,15',
+            'f_name_bn' => 'required|max:25',
+            'f_name_en' => 'required|max:25',
+            'f_occupation' => 'required|max:25',
+            'f_income' => 'required|integer',
+            'f_phone' => 'required|digits_between:9,15',
+            'm_name_bn' => 'required|max:25',
+            'm_name_en' => 'required|max:25',
+            'm_occupation' => 'required|max:20',
+            'm_income' => 'required|integer',
+            'm_phone' => 'required|digits_between:9,15',
+            'p_village' => 'required',
+            'p_house' => 'required',
+            'p_post' => 'required',
+            'p_thana' => 'required',
+            'p_district' => 'required',
+            'per_village' => 'required',
+            'per_house' => 'required',
+            'per_post' => 'required',
+            'per_thana' => 'required',
+            'per_district' => 'required',
+            'dob' => 'required',
+            'b_group' => 'required',
+            'height' => 'required',
+            'weight' => 'required',
+            'skin_color' => '',
+            'b_sign' => '',
+            'lg_name' => 'required',
+            'lg_village' => 'required',
+            'lg_house' => 'required',
+            'lg_post' => 'required',
+            'lg_thana' => 'required',
+            'lg_district' => 'required',
+            'relationship' => 'required',
+            'phone' => 'required|digits_between:9,15',
 
         ]);
 
@@ -145,24 +147,26 @@ class StudentController extends Controller
         }
         $student->save();
 
+        StudentClass::findOrFail($request->addmitted_to_class)->students()->save($student, ['roll' => $request->roll_no]);
+
         $office = new Official();
-        $office ->addmission_no = $request->addmission_no;
-        $office ->date = $request->date;
-        $office ->addmitted_to_class = $request->addmitted_to_class;
-        $office ->roll_no = $request->roll_no;
-        $office ->student_id = $student->id;
-        $office ->save();
+        $office->addmission_no = $request->addmission_no;
+        $office->date = $request->date;
+        $office->addmitted_to_class = $request->addmitted_to_class;
+        $office->roll_no = $request->roll_no;
+        $office->student_id = $student->id;
+        $office->save();
 
         $madrasha = new preMadrasha();
-        $madrasha ->exam_class_name = $request->exam_class_name;
-        $madrasha ->institute_name = $request->institute_name;
-        $madrasha ->result = $request->result;
-        $madrasha ->pass_year = $request->pass_year;
-        $madrasha ->board = $request->board;
-        $madrasha ->document_no = $request->document_no;
-        $madrasha ->addmission_class = $request->addmission_class;
-        $madrasha ->student_id = $student->id;
-        $madrasha ->save();
+        $madrasha->exam_class_name = $request->exam_class_name;
+        $madrasha->institute_name = $request->institute_name;
+        $madrasha->result = $request->result;
+        $madrasha->pass_year = $request->pass_year;
+        $madrasha->board = $request->board;
+        $madrasha->document_no = $request->document_no;
+        $madrasha->addmission_class = $request->addmission_class;
+        $madrasha->student_id = $student->id;
+        $madrasha->save();
 
         Session::flash('message', __('Student Recorded Successfully!!'));
         return redirect()->route('student.index');
@@ -194,12 +198,13 @@ class StudentController extends Controller
     }
 
 
-    public function academic($id){
+    public function academic($id)
+    {
         $student = Student::find($id);
-        $premadrasha = preMadrasha::where('student_id',$id)->first();
-        $official =  Official::where('student_id',$id)->first();
+        $premadrasha = preMadrasha::where('student_id', $id)->first();
+        $official =  Official::where('student_id', $id)->first();
         // dd($premadrasha, $official);
-        return view('admin.pages.academic',compact('premadrasha','official','student'));
+        return view('admin.pages.academic', compact('premadrasha', 'official', 'student'));
     }
 
     /**
@@ -282,11 +287,10 @@ class StudentController extends Controller
         $data = [
             'title' => 'First PDF for Medium',
             'name' => "Salman",
-            ];
+        ];
 
-          $pdf = PDF::loadView('demoPDF', $data);
+        $pdf = PDF::loadView('demoPDF', $data);
 
-          return $pdf->stream('medium.pdf');
-
+        return $pdf->stream('medium.pdf');
     }
 }

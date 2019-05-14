@@ -22,7 +22,7 @@ class CreateOfficialsTable extends Migration
             $table->unsignedBigInteger('student_id')->nullable();
             $table->timestamps();
 
-            $table->foreign('student_id')->references('id')->on('students');
+            $table->foreign('student_id')->references('id')->on('students')->onUpdate('cascade');
         });
     }
 

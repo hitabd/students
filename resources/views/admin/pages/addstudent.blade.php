@@ -240,13 +240,10 @@
                                             <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
                                             <div class="col-sm-10">
                                                 <select class="form-control js-example-basic-single" id="per_thana" name="per_thana">
-                                                    <optgroup">
-                                                        <option>{{ __('Select Thana') }}</option>
-                                                        @foreach ($thanas as $thana)
-                                                        <option value="{{ $thana->id }}">{{ $thana->name }}</option>
-                                                        @endforeach
-
-                                                    </optgroup>
+                                                    <option selected disabled>{{ __('Select Thana') }}</option>
+                                                    @foreach ($thanas as $thana)
+                                                    <option value="{{ $thana->id }}">{{ $thana->name }}</option>
+                                                    @endforeach
                                                 </select>
                                             </div>
                                     </div>
@@ -255,12 +252,10 @@
                                         <div class="col-sm-10">
 
                                             <select class="form-control js-example-basic-single" id="per_district" name="per_district">
-                                                <optgroup>
-                                                        <option selected>{{ __('Select District') }}</option>
-                                                        @foreach ($districts as $district)
-                                                        <option value="{{ $district->id }}">{{ $district->name }}</option>
-                                                        @endforeach
-                                                </optgroup>
+                                                <option selected disabled>{{ __('Select District') }}</option>
+                                                @foreach ($districts as $district)
+                                                <option value="{{ $district->id }}">{{ $district->name }}</option>
+                                                @endforeach
                                             </select>
                                             <span class="messages"></span>
 
@@ -282,17 +277,15 @@
                                             <label class="col-sm-2 col-form-label">{{ __('Blood Group') }}</label>
                                             <div class="col-sm-10">
                                                 <select class="form-control js-example-basic-single" id="b_group" name="b_group">
-                                                    <optgroup label="{{ __('Blood Group') }}">
-                                                            <option>{{ __('Select Blood Group') }}</option>
-                                                            <option value="A+">A+</option>
-                                                            <option value="A-">A-</option>
-                                                            <option value="B+">B+</option>
-                                                            <option value="B-">B-</option>
-                                                            <option value="O+">O+</option>
-                                                            <option value="O-">O-</option>
-                                                            <option value="AB+">AB+</option>
-                                                            <option value="AB-">AB-</option>
-                                                    </optgroup>
+                                                    <option selected disabled>{{ __('Select Blood Group') }}</option>
+                                                    <option value="A+">A+</option>
+                                                    <option value="A-">A-</option>
+                                                    <option value="B+">B+</option>
+                                                    <option value="B-">B-</option>
+                                                    <option value="O+">O+</option>
+                                                    <option value="O-">O-</option>
+                                                    <option value="AB+">AB+</option>
+                                                    <option value="AB-">AB-</option>
                                                 </select>
                                             </div>
                                             <span class="messages"></span>
@@ -331,7 +324,7 @@
                                             <h5>{{ __('Absense of Father') }}</h5>
                                         </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">{{ __('legal Guardian Name') }}</label>
+                                        <label class="col-sm-2 col-form-label">{{ __('Legal Guardian Name') }}</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="lg_name" name="lg_name" value="{{ old('lg_name') }}" placeholder="{{ __('Enter legal Guardian Name') }}">
                                             <span class="messages"></span>
@@ -362,12 +355,10 @@
                                         <label class="col-sm-2 col-form-label">{{ __('Thana') }}</label>
                                         <div class="col-sm-10">
                                             <select class="form-control js-example-basic-single" id="lg_thana" name="lg_thana">
-                                                <optgroup label="{{ __('Thana') }}">
-                                                    <option>{{ __('Select Thana') }}</option>
-                                                    @foreach ($thanas as $thana)
-                                                    <option value="{{ $thana->name }}">{{ $thana->name }}</option>
-                                                    @endforeach
-                                                </optgroup>
+                                                <option selected disabled>{{ __('Select Thana') }}</option>
+                                                @foreach ($thanas as $thana)
+                                                <option value="{{ $thana->name }}">{{ $thana->name }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
@@ -375,12 +366,10 @@
                                         <label class="col-sm-2 col-form-label">{{ __('District') }}</label>
                                         <div class="col-sm-10">
                                             <select class="form-control js-example-basic-single" id="lg_district" name="lg_district">
-                                                <optgroup label="{{ __('District') }}">
-                                                    <option selected>{{ __('Select District') }}</option>
-                                                    @foreach ($districts as $district)
-                                                    <option value="{{ $district->id }}">{{ $district->name }}</option>
-                                                    @endforeach
-                                                </optgroup>
+                                                <option selected disabled>{{ __('Select District') }}</option>
+                                                @foreach ($districts as $district)
+                                                <option value="{{ $district->id }}">{{ $district->name }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
@@ -419,7 +408,7 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">{{ __('Result') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="result" name="result" value="{{ old('result') }}" placeholder="{{ __('Enter Result') }}">
+                                            <input type="text" class="form-control" id="" name="result" value="{{ old('result') }}" placeholder="{{ __('Enter Result') }}">
                                             <span class="messages"></span>
                                         </div>
                                     </div>
@@ -434,19 +423,17 @@
                                             <label class="col-sm-2 col-form-label">{{ __('Blood Group') }}</label>
                                             <div class="col-sm-10">
                                                 <select class="form-control js-example-basic-single" id="board" name="board">
-                                                    <optgroup label="{{ __('Boards') }}">
-                                                            <option>{{ __('Select Board Name') }}</option>
-                                                            <option value="Dhaka">Dhaka</option>
-                                                            <option value="Rajshahi">Rajshahi</option>
-                                                            <option value="Kumilla">Kumilla</option>
-                                                            <option value="Jessore">Jessore</option>
-                                                            <option value="Chottogram">Chottogram</option>
-                                                            <option value="Barishal">Barishal</option>
-                                                            <option value="Sylhet">Sylhet</option>
-                                                            <option value="Dinajpur">Dinajpur</option>
-                                                            <option value="Dinajpur">Dinajpur</option>
-                                                            <option value="Madrasha">Madrasha</option>
-                                                    </optgroup>
+                                                    <option selected disabled>{{ __('Select Board Name') }}</option>
+                                                    <option value="Dhaka">Dhaka</option>
+                                                    <option value="Rajshahi">Rajshahi</option>
+                                                    <option value="Kumilla">Kumilla</option>
+                                                    <option value="Jessore">Jessore</option>
+                                                    <option value="Chottogram">Chottogram</option>
+                                                    <option value="Barishal">Barishal</option>
+                                                    <option value="Sylhet">Sylhet</option>
+                                                    <option value="Dinajpur">Dinajpur</option>
+                                                    <option value="Dinajpur">Dinajpur</option>
+                                                    <option value="Madrasha">Madrasha</option>
                                                 </select>
                                             </div>
                                             <span class="messages"></span>
@@ -483,10 +470,14 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">{{ __('Addmitted To Class') }}</label>
+                                        <label class="col-sm-2 col-form-label">{{ __('') }}</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="addmitted_to_class" id="addmitted_to_class" value="{{ old('addmitted_to_class') }}" placeholder="{{ __('Enter Addmitted To Class') }}">
-                                            <span class="messages"></span>
+                                            <select class="form-control js-example-basic-single" id="addmitted_to_class" name="addmitted_to_class">
+                                                    <option selected disabled>{{ __('Select Class') }}</option>
+                                                @foreach ($classes as $class)
+                                                    <option value="{{ $class->id }}">{{ $class->name }}</option>
+                                                @endforeach
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="form-group row">

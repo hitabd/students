@@ -23,7 +23,7 @@ class CreateDistrictsTable extends Migration
             $table->string('website');
             $table->timestamps();
 
-            $table->foreign('division_id')->references('id')->on('divisions');
+            $table->foreign('division_id')->references('id')->on('divisions')->onUpdate('cascade');
         });
     }
 
